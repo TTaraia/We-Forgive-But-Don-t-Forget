@@ -1,0 +1,60 @@
+# Remembering the Eritrean War Years, 1961-1991 (English). Every figure is from the sources listed in lang.py / sources_and_figures.md.
+# Header:  Title | Date label | map settings.   Scenes separated by -----
+# map settings: view=eritrea|horn ; style=memorial|independent|... ; mark=City,City ; note=analysis
+
+A note before we begin | For young viewers | view=eritrea; style=memorial
+This video remembers civilians who suffered during Eritrea's thirty-year war of independence, from 1961 to 1991. It is based on reports by Human Rights Watch and on historical research. We avoid graphic detail, but these events are sad. Numbers are estimates, and sources often disagree, so we say where figures come from. If you are young, please watch with a parent or a teacher.
+-----
+The first shots | 1 September 1961 | view=eritrea; style=memorial
+On the first of September, 1961, Hamid Idris Awate and a small band of fighters fired the first shots of the armed struggle, in the Barka lowlands. Human Rights Watch writes that in the years that followed, the army's methods were aimed less at the fighters than at villages suspected of helping them. Even an Ethiopian officer who strongly supported unity later criticized this, writing that the army had entered Eritrea with the attitude of a conqueror.
+-----
+Barka burns | February - April 1967 | view=eritrea; style=memorial; mark=Tessenei
+On the 11th of February, 1967, about 5,000 Ethiopian soldiers began burning villages in the Barka lowlands, supported by artillery and aircraft. By April, Human Rights Watch reports, 62 villages had been burned. Local leaders counted 402 civilians killed, and about 60,000 cattle and camels were slaughtered. On the 12th of February, 21 prisoners, mostly teachers and government employees, were executed in Tessenei prison. Thousands of families fled to Sudan. More than 25,000 refugees were registered there that spring, in the first operation of the United Nations refugee agency in the Horn of Africa.
+-----
+More villages destroyed | July - November 1967 | view=eritrea; style=memorial; mark=Massawa,Keren
+In July 1967, soldiers burned the villages of Eilet and Gumhot in the eastern lowlands. Thirty young men were killed in a single house, and fifty-one people died in all. In November, about 7,000 soldiers began burning villages around Keren. Human Rights Watch says that nearly all the villages of the Senhit region, 174 in all, were destroyed, and that crops were burned and wells poisoned. The destruction then spread to the highland districts of Seraye and Akele Guzai, where 86 more villages were burned.
+-----
+A mosque near Keren | November 1970 | view=eritrea; style=memorial; mark=Keren
+In November 1970, an Ethiopian general was killed in an ambush near Keren. In reprisal, soldiers raided villages in the area. Eritrean historians record about 120 people killed at Besikdira on the 30th of November. Human Rights Watch records 112 people killed in a mosque at a village near Keren that month, after soldiers told them they would be safe inside. Reports of the total range from 112 to about 200. Few records were kept, and survivors' accounts are the main evidence.
+-----
+Ona | 1 December 1970 | view=eritrea; style=memorial; mark=Keren
+The next day, the 1st of December, soldiers attacked the village of Ona, on the edge of Keren, where many families who had fled the raids had gathered. Human Rights Watch estimates that about 625 people were killed. Eritrean historians give higher numbers, over 800. The village was burned. Against official orders, boy scouts from Keren went in to bury the dead. Eritrean accounts remember Ona as one of the worst atrocities of the war.
+-----
+State of emergency | December 1970 - January 1971 | view=eritrea; style=memorial
+In December 1970, the military governor declared a state of emergency in Eritrea. Soldiers gained the power to arrest people at will and to move whole populations. Strips of land ten kilometers wide along the coast and the Sudan border were declared prohibited zones, where the army could fire at any target. On the 27th of January, 1971, about 60 civilians, most of them elderly, were killed in a mosque in the village of Elabored.
+-----
+Om Hajer | July 1974 | view=eritrea; style=memorial; mark=Om Hajer
+In July 1974, after rebel assassinations, soldiers burned the village of Om Hajer near the Sudan border. They ordered the villagers to gather in the local stadium, and then opened fire. Human Rights Watch reports that at least 54 civilians were shot dead and 73 more drowned trying to cross a flooded river. About 4,000 people fled to Sudan. General Aman Andom, the new head of state and himself an Eritrean, apologized and promised compensation, which was never paid.
+-----
+Asmara | 31 January - 4 February 1975 | view=eritrea; style=memorial; mark=Asmara
+On the 31st of January, 1975, the Eritrean fronts attacked Asmara, and the city stayed under government control. Over the following four days, Human Rights Watch reports, government soldiers went through the city and nearby villages killing civilians. Journalists confirmed 331 civilian deaths, and other sources claimed up to 3,000. About 100 people were killed in the village of Woki Debra, just outside the city. The government said 124 civilians died from stray bullets, and it executed 13 of its own soldiers for excesses.
+-----
+A year of destruction | 1975 | view=eritrea; style=memorial; mark=Agordat
+The Eritrean People's Liberation Front estimated that the army partly or fully destroyed 110 villages in 1975. Eritrean sources also report massacres, with hundreds of victims, at Agordat on the 9th of March and at Hirgigo on the 17th of April. The army blockaded food from reaching the highlands, and its military administrator explained the policy with a saying: to kill the fish, first dry the sea. Food prices around Asmara rose more than twenty times.
+-----
+Counting the cost | 1977 - 1978 | view=eritrea; style=memorial
+In March 1977, a naval unit killed between 100 and 160 civilians at the Red Sea village of Imberemi. In early 1978, the Ethiopian administration in Eritrea itself estimated the cost of the war so far: 13,000 soldiers, and between 30,000 and 50,000 civilians, killed or wounded. It also recorded more than 200,000 Eritreans forced into exile, over half of them in Sudan.
+-----
+The air war | The 1980s | view=eritrea; style=memorial; mark=Nakfa
+Through the 1980s, Eritrea's liberated areas were bombed from the air. In 1990, Human Rights Watch reported that the town of Nakfa had been completely destroyed by ten years of repeated air raids. An Ethiopian pilot captured in 1984 said the order was to bomb everything that moves. Markets, farming and travel moved to the night, so that people could avoid the planes. Villagers learned not to wear bright colors or light fires in the daytime.
+-----
+She'eb | 12 May 1988 | view=eritrea; style=memorial; mark=She'eb
+In March 1988, Eritrean forces won the Battle of Afabet. In April, the Ethiopian government expelled foreign aid agencies, and on the 14th of May it declared a state of emergency. On the 12th of May, 1988, soldiers and tanks surrounded the village of She'eb, in the Semhar region, and told the villagers to gather for a meeting. Human Rights Watch documented about 400 civilians killed there, and at least 100 more in nearby villages. About 110,000 people were displaced that year, and about 40,000 fled to Sudan.
+-----
+Afabet | 3 - 4 April 1990 | view=eritrea; style=memorial; mark=Afabet
+On the 3rd and 4th of April, 1990, air raids struck the town of Afabet. Human Rights Watch records 16 people killed on the 3rd, and 51 killed with 125 seriously wounded on the 4th. A German aid worker, Dr. Rupert Neudeck, who saw an earlier raid there in May 1988, said there was no military target in the town, only civilians.
+-----
+Massawa under the bombs | February - April 1990 | view=eritrea; style=memorial; mark=Massawa
+On the 11th of February, 1990, Eritrean forces captured the port of Massawa. From the 16th of February, the Ethiopian air force bombed it for eight days, hitting food stores holding about 50,000 tonnes of donated wheat meant for famine relief. About half was burned. The raids returned in April. On the 13th of April, a camp of families who had left the city was bombed, and at least 25 civilians were burned. On the 22nd of April, cluster bombs fell on a crowded street at dusk, killing about 50 people and wounding 110.
+-----
+Massawa: the damage | May - June 1990 | view=eritrea; style=memorial; mark=Massawa
+Human Rights Watch reported in July 1990 that more than 100 civilians had died in the air raids on Massawa, and that more than 100 houses were destroyed. On the 1st of May, the government threatened to bomb any ship docking at the port, and a relief ship had to turn away to Port Sudan. The raids continued until the 10th of June, when international pressure led the government to allow relief shipments. Human Rights Watch concluded that the repeated raids were deliberately aimed at civilians.
+-----
+Asmara under siege | 1990 - 1991 | view=eritrea; style=memorial; mark=Asmara
+After Massawa fell, the Ethiopian army was confined to Asmara and its surroundings until May 1991. People lived under a curfew, and anyone out after dark could be shot on sight. On the 9th of June, 1990, soldiers left their base and shot dead 31 young people on their way home from watching a World Cup football match, wounding at least 15 more. Civilians were arrested on slight suspicion of supporting the Eritrean fighters, and many were kept from leaving the city.
+-----
+24 May 1991 | 24 May 1991 | view=eritrea; style=independent; mark=Asmara
+On the 24th of May, 1991, Eritrean fighters entered Asmara as the Ethiopian army collapsed. Human Rights Watch noted that, to the great relief of Eritreans, the city was captured intact, without widespread destruction or loss of civilian life. Eritreans celebrate this day every year. The formal declaration of independence followed in 1993, after a United Nations-observed referendum.
+-----
+Remembering | 1961 - 1991 | view=eritrea; style=memorial
+No one knows the exact number of victims. Many were never counted, and records of destroyed villages are incomplete. By 1993, about 350,000 Eritreans were still living as refugees in Sudan. Human Rights Watch also documented abuses by the Eritrean fronts during the war, and the two main fronts fought each other in a civil war. This video focuses on the actions of the Ethiopian military toward civilians. Remembering the victims, and learning the facts, helps young people understand where their country's story comes from.
