@@ -1,5 +1,5 @@
 """Usage: python make_history.py (project: Remembering the Eritrean War Years) en|am|ti
-Builds history_<lang>.mp4 (intro music, narrated scenes with a map for each, outro music) and history_<lang>.<sub>.srt files.
+Builds remembering_<lang>.mp4 (intro music, narrated scenes with a map for each, outro music) and remembering_<lang>.<sub>.srt files.
 Tigrinya has no free voice: put your own recordings in audio_ti/01.mp3 ... (scene numbers); scenes without a recording
 become silent captioned scenes over quiet music."""
 import asyncio, glob, json, os, re, subprocess, sys, textwrap
