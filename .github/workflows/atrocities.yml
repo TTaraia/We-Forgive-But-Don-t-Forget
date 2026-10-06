@@ -20,7 +20,7 @@ jobs:
         with:
           name: ethiopian-atrocities-on-eritreans
           path: |
-            history_*.mp4
-            history_*.srt
-            history_*.description.txt
-            history_*_thumbnail.png
+            remembering_*.mp4
+            remembering_*.srt
+            remembering_*.description.txt
+            remembering_*_thumbnail.png
