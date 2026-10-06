@@ -1,0 +1,15 @@
+{
+  "slide": "alternate",
+  "_help": "slide = right | bottom | alternate.  Each scene (use its exact title from scenes_en.txt, or its number) lists photos. Two kinds: {\"commons\": \"File:Name.jpg\"} is licence-checked on Wikimedia Commons and credited automatically; {\"file\": \"photos/x.jpg\", \"credit\": \"Photo: Name\"} is your own photo or one you have permission to use. Use calm photos of places, memorials and towns: no victims, no graphic scenes.",
+  "scenes": {
+    "Massawa under the bombs": [
+      {"commons": "File:Massawa,_Eritrea_(Ottoman_architecture).jpg", "caption": "Old Massawa today"}
+    ],
+    "Massawa: the damage": [],
+    "Ona": [],
+    "Afabet": [],
+    "The air war": [],
+    "Asmara under siege": [],
+    "24 May 1991": []
+  }
+}
