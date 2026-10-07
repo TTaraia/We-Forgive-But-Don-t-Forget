@@ -1,4 +1,4 @@
-name: Build the war-years video
+name: Build the war-years atrocities video
 on:
   workflow_dispatch:
 jobs:
