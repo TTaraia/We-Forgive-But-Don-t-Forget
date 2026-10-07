@@ -5,20 +5,82 @@
     "Massawa under the bombs": [
       {"commons": "File:Massawa,_Eritrea_(Ottoman_architecture).jpg", "caption": "Old Massawa today"},
       {"commons": "Massawa: the damage, Massawa.png", "caption": "Massawa Massacre"}],
-    "Tessenei": [{"commons": "File:Tessenei, Tessenei.png", "caption": "Tessenei Massacre"}],
-    "Keren": [{"commons": "File:Keren, Keren.png", "caption": "Keren Massacre"}],
-    "Om Hajer": [{"commons": "File:Om Hajer, Om Hager.png", "caption": "Om Hager Massacre"}],
-    "Agordat": [{"commons": "File:Agordat, Agordat.png", "caption": "Agordat Massacre"}],
-    "Nakfa": [{"commons": "File:Nakfa, Nakfa.png", "caption": "Nakfa Massacre"}],
-    "Afabet": [{"commons": "File:Afabet, Afabet.png", "caption": "Afabet Massacre"}],
-    "Eilet": [{"commons": "File:Eilet, Eilet.png", "caption": "Eilet Massacre"}],
-    "Gumhot": [{"commons": "File:Gumhot, Gumhot.png", "caption": "Gumhot Massacre"}],
-    "Besikdira": [{"commons": "File:Besikdira, Besikdira.png", "caption": "Besikdira Massacre"}],
-    "Ona": [{"commons": "File:Ona, Ona.png", "caption": "Ona Massacre"}],
-    "Elabored": [{"commons": "File:Elabored, Elabored.png", "caption": "Elabored Massacre"}],
-    "Woki Debra": [{"commons": "File:Woki Debra, Woki Debra.png", "caption": "Woki Debra Massacre"}],
-    "Hirgigo": [{"commons": "File:Hirgigo, Hirgigo.png", "caption": "Hirgigo Massacre"}],
-    "Imberemi": [{"commons": "File:Imberemi, Imberemi.png", "caption": "Imberemi Massacre"}],
-    "She'eb and Maryam Gimbi Prison Asmara": [{"commons": "File:She'eb, She'eb.png", "caption": "She'eb Massacre"}]
+
+  "2": {
+      "image": "tessenei.jpg",
+      "caption": "Site of the 1967 prison executions."
+      },
+  "3": {
+      "image": "massawa.jpg",
+      "caption": "The Red Sea Port under siege and repeated bombings, 1990."
+      },
+  "4": {
+      "image": "keren.jpg",
+      "caption": "Target of air raids and the Senhit region destruction, 1967."
+      },
+  "5": {
+      "image": "woki_duba.jpg",
+      "caption": "Village outside Asmara, site of 1975 killings."
+      },
+
+    "6": {
+      "image": "afabet.jpg",
+      "caption": "Site of the 1990 air raid, previously the location of a major battle."
+    },
+    "7": {
+      "image": "agordat.jpg",
+      "caption": "Town in the western lowlands, 1975 massacre site."
+    },
+    "8": {
+      "image": "asmara.jpg",
+      "caption": "Capital city, site of the 1975 massacre and 1991 liberation."
+    },
+    "9": {
+      "image": "besikdira.jpg",
+      "caption": "Site of mass killings, November 1970."
+    },
+
+    "10": {
+      "image": "eilet.jpg",
+      "caption": "Village in eastern lowlands burned, July 1967."
+    },
+    "11": {
+      "image": "elabored.jpg",
+      "caption": "Village mosque massacre, January 1971."
+    },
+    "12": {
+      "image": "bumhot.jpg",
+      "caption": "Village in eastern lowlands destroyed, July 1967."
+    },
+    "13": {
+      "image": "hirgigo.jpg",
+      "caption": "Coastal village massacre, April 1975."
+    },
+
+    "14": {
+      "image": "imberemi.jpg",
+      "caption": "Coastal village massacre, April 1975."
+      },
+  "15": {
+      "image": "maryam_gimbi.jpg",
+      "caption": "Documented site of detainee abuse and killings during the war."
+      },
+  "16": {
+      "image": "nakfa.jpg",
+      "caption": "Symbol of resistance; town completely destroyed by 1990."
+      },
+  "17": {
+      "image": "om_hajer.jpg",
+      "caption": "Village near the Sudan border, 1974 stadium massacre site."
+      },
+
+    "18": {
+      "image": "ona.jpg",
+      "caption": "Village on the edge of Keren, destroyed December 1970."
+    },
+    "19": {
+      "image": "sheeb.jpg",
+      "caption": "Village in Semhar region, 1988 massacre site."
+    }
   }
 }
