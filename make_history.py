@@ -1,10 +1,10 @@
 """Usage: python make_history.py (project: Remembering the Eritrean War Years) en|am|ti
-Builds remembering_<lang>.mp4 (intro music, narrated scenes with a map for each, outro music) and remembering_<lang>.<sub>.srt files.
+Builds history_<lang>.mp4 (intro music, narrated scenes with a map for each, outro music) and history_<lang>.<sub>.srt files.
 Tigrinya has no free voice: put your own recordings in audio_ti/01.mp3 ... (scene numbers); scenes without a recording
 become silent captioned scenes over quiet music."""
-import asyncio, glob, json, os, re, subprocess, sys, textwrap
-from PIL import Image, ImageDraw
-import lang, mapkit, histmap, music, scenes
+import asyncio, glob, json, math, os, re, subprocess, sys, textwrap
+from PIL import Image, ImageDraw, ImageFilter
+import lang, mapkit, histmap, music, scenes, commons_tools
 
 V = sys.argv[1] if len(sys.argv) > 1 else "en"
 W, H = 1280, 720
@@ -51,7 +51,8 @@ def bed_file():
     Env BED=eritrean (default) | pachelbel | none."""
     if _bed: return _bed[0]
     mode = os.environ.get("BED", "eritrean")
-    if os.path.exists("music.mp3"): p = "music.mp3"
+    own = [f for f in ("music.mp3", "music.m4a", "music.wav", "music.aac", "music.ogg") if os.path.exists(f)]
+    if own: p = own[0]
     elif mode == "none": p = None
     elif mode == "pachelbel":
         p = "bed_pachelbel.wav"
@@ -73,14 +74,43 @@ def music_clip(out, seconds=INTRO_SECONDS):      # intro/outro: with a full-leng
 def silent_scene(out, seconds):   # captioned scene without a voice
     silence(out, seconds)
 
+def long_bed(src, total, xf=4.0):
+    """Repeats the music with a smooth crossfade at every repeat, so a 3-minute song can run under a 10+ minute video."""
+    L = dur(src)
+    if L >= total + 2: return src, False
+    if L < 3 * xf: return src, True            # very short clip: plain loop
+    n = math.ceil((total - xf) / (L - xf)) + 1
+    ins = []; fc, prev = "", "[0:a]"
+    for i in range(n): ins += ["-i", src]
+    for i in range(1, n):
+        fc += f"{prev}[{i}:a]acrossfade=d={xf}:c1=tri:c2=tri[x{i}];"; prev = f"[x{i}]"
+    out = "bed_long.wav"
+    run(["ffmpeg", "-y", "-loglevel", "error", *ins, "-filter_complex", fc.rstrip(";"), "-map", prev, "-t", f"{total + 2:.1f}", out])
+    return out, False
+
 def add_bed(video_in, video_out, total):
-    """Mixes the bed under the narration: loud in the first/last 10 s, quiet (BED_LEVEL, default 0.16) under the voice."""
+    """Music under the narration. Two modes:
+    - song.mp3 present: your song (with vocals) plays alone for the first and last ~14 s; a vocal-free bed plays quietly in between.
+    - otherwise: the bed (music.mp3 or the built-in instrumental) is loud for the first/last 10 s and quiet (BED_LEVEL) under the voice."""
     lvl = float(os.environ.get("BED_LEVEL", "0.16"))
-    env = f"{lvl}+{0.9 - lvl:.3f}*clip((10-t)/2,0,1)+{0.9 - lvl:.3f}*clip((t-({total:.2f}-12))/2,0,1)"
-    fc = (f"[1:a]volume='{env}':eval=frame,afade=t=in:d=1.5,afade=t=out:st={total - 4:.2f}:d=4,atrim=0:{total:.2f}[bed];"
-          f"[0:a][bed]amix=inputs=2:duration=first:dropout_transition=0:normalize=0[a]")
-    run(["ffmpeg", "-y", "-loglevel", "error", "-i", video_in, "-stream_loop", "-1", "-i", bed_file(), "-filter_complex", fc,
-         "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-t", f"{total:.2f}", video_out])
+    src, plain_loop = long_bed(bed_file(), total)
+    loop = ["-stream_loop", "-1"] if plain_loop else []
+    song = next((f for f in ("song.mp3", "song.m4a", "song.wav") if os.path.exists(f)), None)
+    if song:
+        L = dur(song); n_in = min(14.0, L); n_out = min(14.0, L); ms = int((total - n_out) * 1000)
+        fc = (f"[1:a]volume={lvl},afade=t=in:d=1.5,afade=t=out:st={total - 4:.2f}:d=4,atrim=0:{total:.2f}[bed];"
+              f"[2:a]asplit=2[sa][sb];"
+              f"[sa]atrim=0:{n_in:.1f},asetpts=PTS-STARTPTS,afade=t=out:st={n_in - 4:.1f}:d=4,volume=0.9[s1];"
+              f"[sb]atrim=start={L - n_out:.1f}:end={L:.1f},asetpts=PTS-STARTPTS,afade=t=in:d=2,afade=t=out:st={n_out - 3:.1f}:d=3,volume=0.9,adelay={ms}|{ms}[s2];"
+              f"[0:a][bed][s1][s2]amix=inputs=4:duration=first:dropout_transition=0:normalize=0[a]")
+        ins = ["-i", video_in, *loop, "-i", src, "-i", song]
+    else:
+        env = f"{lvl}+{0.9 - lvl:.3f}*clip((10-t)/2,0,1)+{0.9 - lvl:.3f}*clip((t-({total:.2f}-12))/2,0,1)"
+        fc = (f"[1:a]volume='{env}':eval=frame,afade=t=in:d=1.5,afade=t=out:st={total - 4:.2f}:d=4,atrim=0:{total:.2f}[bed];"
+              f"[0:a][bed]amix=inputs=2:duration=first:dropout_transition=0:normalize=0[a]")
+        ins = ["-i", video_in, *loop, "-i", src]
+    run(["ffmpeg", "-y", "-loglevel", "error", *ins, "-filter_complex", fc, "-map", "0:v", "-map", "[a]",
+         "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-t", f"{total:.2f}", video_out])
 
 def own_recording(n):
     f = glob.glob(f"audio_{V}/{n:02d}.*"); return f[0] if f else None
@@ -124,10 +154,69 @@ def overlay(kind, sc, path, n, total, spec):
             d.rounded_rectangle([40, 96, 40 + w, 142], 12, fill=WARN); T(d, (60, 120), lab, 26, (255, 255, 255))
     img.save(path)
 
+# ---------------- sliding photos ----------------
+PHOTO_X, PHOTO_Y, PHOTO_W, PHOTO_H = 760, 98, 440, 290      # the picture area of a card (pixels in the 1280x720 frame)
+SLIDE_IN, SLIDE_OUT, MIN_SLOT = 0.9, 0.7, 3.5
+
+def photo_config():
+    return json.load(open("images.json", encoding="utf-8")) if os.path.exists("images.json") else {}
+
+def resolve_photos(cfg, title, idx):
+    """Returns [{path, caption, credit, page}] for a scene. Commons photos are licence-checked and skipped if not reusable."""
+    entries = cfg.get("scenes", {}).get(title) or cfg.get("scenes", {}).get(str(idx + 1)) or []
+    out = []
+    for e in entries:
+        try:
+            if e.get("commons"):
+                import commons_tools as ct
+                info = ct.lookup(e["commons"])
+                if not info: print("photo skipped (not found):", e["commons"]); continue
+                if not info["allowed"]: print(f"photo skipped (licence '{info['license']}' not reusable):", info["title"]); continue
+                path = ct.download(info["url"], info["title"])
+                credit = f"Photo: {info['author']}, {info['license']}"; page = info["page"]
+            else:
+                path, credit, page = e["file"], e.get("credit", ""), e.get("page", "")
+                if not os.path.exists(path): print("photo skipped (file missing):", path); continue
+                if not credit: print("photo skipped (local photos need a 'credit' line):", path); continue
+            out.append({"path": path, "caption": e.get("caption", ""), "credit": credit, "page": page})
+        except Exception as ex:
+            print("photo skipped:", e, "-", ex)
+    return out
+
+def make_card(p, out_png):
+    """A framed photo card (white border, soft shadow, caption and credit) as a transparent PNG."""
+    im = Image.open(p["path"]).convert("RGB"); bw, bh = PHOTO_W, PHOTO_H
+    s = max(bw / im.width, bh / im.height); im = im.resize((int(im.width * s) + 1, int(im.height * s) + 1))
+    l, t = (im.width - bw) // 2, (im.height - bh) // 2; im = im.crop((l, t, l + bw, t + bh))
+    cap = lang.wrap(p["caption"], 20, bw, 2) if p["caption"] else []
+    cred = lang.wrap(p["credit"], 14, bw, 2) if p["credit"] else []
+    th = 12 + bh + 10 + 26 * len(cap) + 20 * len(cred) + 14; tw = bw + 24
+    card = Image.new("RGBA", (tw + 40, th + 40), (0, 0, 0, 0))
+    sh = Image.new("RGBA", card.size, (0, 0, 0, 0)); ImageDraw.Draw(sh).rounded_rectangle([26, 30, 26 + tw, 30 + th], 10, fill=(0, 0, 0, 120))
+    card.alpha_composite(sh.filter(ImageFilter.GaussianBlur(8)))
+    d = ImageDraw.Draw(card); d.rounded_rectangle([20, 20, 20 + tw, 20 + th], 10, fill=(250, 250, 248, 255))
+    card.paste(im, (32, 32)); y = 32 + bh + 22
+    for line in cap: lang.draw_text(d, (32, y), line, 20, INK); y += 26
+    for line in cred: lang.draw_text(d, (32, y), line, 14, (90, 100, 115)); y += 20
+    card.save(out_png)
+    return card.size
+
+def slide_expr(x0, y0, tin, tout, direction):
+    pin = f"clip((t-{tin:.2f})/{SLIDE_IN},0,1)"; pout = f"clip((t-({tout:.2f}-{SLIDE_OUT}))/{SLIDE_OUT},0,1)"
+    f = f"((1-{pin}*{pin}*(3-2*{pin}))+{pout}*{pout}*(3-2*{pout}))"          # 1 = off screen, 0 = in place (smooth ease)
+    return (f"{x0}+(W-{x0})*{f}", str(y0)) if direction == "right" else (str(x0), f"{y0}+(H-{y0})*{f}")
+
+def photo_plan(n, D):
+    """Start/end time for each of n photos in a scene of D seconds."""
+    start, end = 1.0, D - 0.8
+    n = max(1, min(n, int((end - start) // MIN_SLOT)))
+    slot = (end - start) / n
+    return n, [(start + i * slot, start + (i + 1) * slot - 0.1) for i in range(n)]
+
 def check_files():
     """Stops with a clear message if one of the .py files in the repo is an older version than make_history.py."""
     need = {"scenes": ["parse", "validate"], "lang": ["HIST", "draw_text", "wrap", "width"], "music": ["make_music", "make_eritrean_bed"],
-            "histmap": ["render"], "mapkit": ["load", "tint", "flag_tint", "set_lang", "label"]}
+            "histmap": ["render"], "commons_tools": ["lookup", "download", "license_ok"], "mapkit": ["load", "tint", "flag_tint", "set_lang", "label"]}
     old = [f"{mod}.py" for mod, names in need.items() if any(not hasattr(globals()[mod], n) for n in names)]
     keys = ("video_title", "desc", "sources", "disclosure", "chapters", "chapter_intro", "chapter_outro", "intro_spoken", "styles")
     if "lang.py" not in old and any(k not in lang.HIST[c] for c in ("en", "am", "ti") for k in keys): old.append("lang.py")
@@ -161,16 +250,26 @@ if __name__ == "__main__":
         audio.append(out)
     adur = [dur(a) for a in audio]
     durs = [max(ad + (0.8 if it[0] == "voice" else 0), MIN_SCENE if it[1] == "scene" else 0) for ad, it in zip(adur, items)]
-    total = len(scs); parts, starts, cum = [], [], 0.0
+    total = len(scs); parts, starts, cum = [], [], 0.0; pcfg = photo_config(); credits = []
     for k, ((kind, role, idx), a, D) in enumerate(zip(items, audio, durs)):
         spec = en[idx]["spec"] if role == "scene" else {"view": "horn", "style": "independent"}
         histmap.render(countries, spec, V).save(f"{V}_m{k}.png")
         overlay(role if role != "scene" else "scene", scs[idx] if idx is not None else None, f"{V}_o{k}.png", (idx or 0) + 1, total, spec)
         xs, xe, ys, ye = (0, 128, 0, 72) if k % 2 == 0 else (128, 0, 72, 0)
-        fc = (f"[0:v]crop=2432:1368:x='{xs}+({xe - xs})*t/{D:.3f}':y='{ys}+({ye - ys})*t/{D:.3f}',scale={W}:{H}:flags=bicubic[bg];[bg][1:v]overlay=0:0[v]")
+        photos = resolve_photos(pcfg, scs[idx]["title"], idx) if role == "scene" else []
+        n_ph, slots = photo_plan(len(photos), D) if photos else (0, [])
+        fc = f"[0:v]crop=2432:1368:x='{xs}+({xe - xs})*t/{D:.3f}':y='{ys}+({ye - ys})*t/{D:.3f}',scale={W}:{H}:flags=bicubic[bg];[bg][1:v]overlay=0:0[v0]"
+        extra, last = [], "v0"
+        for j in range(n_ph):
+            png = f"{V}_p{k}_{j}.png"; make_card(photos[j], png)
+            direction = ("right" if (k + j) % 2 == 0 else "bottom") if pcfg.get("slide", "alternate") == "alternate" else pcfg.get("slide", "right")
+            ex, ey = slide_expr(PHOTO_X - 20, PHOTO_Y - 20, slots[j][0], slots[j][1], direction)
+            fc += f";[{last}][{3 + j}:v]overlay=x='{ex}':y='{ey}':enable='between(t,{slots[j][0]:.2f},{slots[j][1]:.2f})'[v{j + 1}]"
+            last = f"v{j + 1}"; extra += ["-loop", "1", "-framerate", "25", "-t", f"{D:.2f}", "-i", png]
+            credits.append(f"{scs[idx]['title']}: {photos[j]['caption']} - {photos[j]['credit']} {photos[j]['page']}".strip())
         run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-framerate", "25", "-t", f"{D:.2f}", "-i", f"{V}_m{k}.png",
-             "-loop", "1", "-framerate", "25", "-t", f"{D:.2f}", "-i", f"{V}_o{k}.png", "-i", a, "-filter_complex", fc,
-             "-map", "[v]", "-map", "2:a", "-af", f"apad=whole_dur={D:.2f}", "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p",
+             "-loop", "1", "-framerate", "25", "-t", f"{D:.2f}", "-i", f"{V}_o{k}.png", "-i", a, *extra, "-filter_complex", fc,
+             "-map", f"[{last}]", "-map", "2:a", "-af", f"apad=whole_dur={D:.2f}", "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p",
              "-r", "25", "-c:a", "aac", "-ar", "44100", "-ac", "2", "-t", f"{D:.2f}", f"{V}_s{k}.mp4"])
         parts.append(f"{V}_s{k}.mp4"); starts.append(cum); cum += D
     open(f"{V}_list.txt", "w").write("".join(f"file '{p}'\n" for p in parts))
@@ -192,6 +291,7 @@ if __name__ == "__main__":
         if kind == "voice" and role == "scene": chap.append((starts[k], scs[idx]["title"]))
         if kind == "voice" and role == "outro": chap.append((starts[k], h["chapter_outro"]))
     text = "\n\n".join([h["video_title"], h["desc"], h["chapters"] + ":\n" + "\n".join(f"{clock(t)} {n}" for t, n in chap), h["sources"], h["disclosure"]])
+    if credits: text += "\n\nPhoto credits:\n" + "\n".join("- " + c for c in credits)
     open(f"remembering_{V}.description.txt", "w", encoding="utf-8").write(text + "\n")
     base = Image.open(f"{V}_m1.png").convert("RGB").resize((W, H)); ov = Image.open(f"{V}_o1.png"); base.paste(ov, (0, 0), ov)
     base.save(f"remembering_{V}_thumbnail.png")
