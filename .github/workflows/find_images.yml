@@ -1,0 +1,21 @@
+name: Find free photos (Wikimedia Commons)
+on:
+  workflow_dispatch:
+    inputs:
+      queries:
+        description: "Search terms separated by | (leave empty for the default places)"
+        default: ""
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: { python-version: "3.12" }
+      - name: Search Commons
+        run: |
+          if [ -z "${{ inputs.queries }}" ]; then python find_images.py; else IFS='|' read -ra Q <<< "${{ inputs.queries }}"; python find_images.py "${Q[@]}"; fi
+      - uses: actions/upload-artifact@v5
+        with:
+          name: image-candidates
+          path: image_candidates.html

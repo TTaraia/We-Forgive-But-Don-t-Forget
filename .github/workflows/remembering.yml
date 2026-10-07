@@ -1,0 +1,24 @@
+name: Build the war-years video
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: { python-version: "3.12" }
+      - run: pip install edge-tts pillow shapely numpy
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      - run: python make_history.py en
+      - uses: actions/upload-artifact@v5
+        with:
+          name: remembering-video
+          path: |
+            remembering_*.mp4
+            remembering_*.srt
+            remembering_*.description.txt
+            remembering_*_thumbnail.png

@@ -1,0 +1,29 @@
+name: Remove vocals from a song (experimental)
+on:
+  workflow_dispatch:
+    inputs:
+      song:
+        description: "Song file in the repository"
+        default: "song.mp3"
+      model:
+        description: "Inst_HQ_3 (default) or Kim_Vocal_2"
+        default: "Inst_HQ_3"
+jobs:
+  separate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: { python-version: "3.12" }
+      - run: pip install onnxruntime scipy numpy
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      - run: python remove_vocals.py "${{ inputs.song }}" --model ${{ inputs.model }}
+      - uses: actions/upload-artifact@v5
+        with:
+          name: separated-music
+          path: |
+            music_instrumental.mp3
+            music_vocals_only.mp3
