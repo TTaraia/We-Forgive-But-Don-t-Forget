@@ -1,4 +1,4 @@
-name: Build recount of various atrocities committed by Ethiopian military forces on Eritrean Citizens videos
+name: Build the war-years atrocities video
 on:
   workflow_dispatch:
 jobs:
