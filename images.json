@@ -4,9 +4,7 @@
   "scenes": {
     "Massawa under the bombs": [
       {"commons": "File:Massawa,_Eritrea_(Ottoman_architecture).jpg", "caption": "Old Massawa today"},
-      {"commons": "Massawa: the damage, Massawa.png", "caption": "Massawa Massacre"},
-    ],
-    
+      {"commons": "Massawa: the damage, Massawa.png", "caption": "Massawa Massacre"}],
     "Tessenei": [{"commons": "File:Tessenei, Tessenei.png", "caption": "Tessenei Massacre"}],
     "Keren": [{"commons": "File:Keren, Keren.png", "caption": "Keren Massacre"}],
     "Om Hajer": [{"commons": "File:Om Hajer, Om Hager.png", "caption": "Om Hager Massacre"}],
