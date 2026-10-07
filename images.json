@@ -3,13 +3,24 @@
   "_help": "slide = right | bottom | alternate.  Each scene (use its exact title from scenes_en.txt, or its number) lists photos. Two kinds: {\"commons\": \"File:Name.jpg\"} is licence-checked on Wikimedia Commons and credited automatically; {\"file\": \"photos/x.jpg\", \"credit\": \"Photo: Name\"} is your own photo or one you have permission to use. Use calm photos of places, memorials and towns: no victims, no graphic scenes.",
   "scenes": {
     "Massawa under the bombs": [
-      {"commons": "File:Massawa,_Eritrea_(Ottoman_architecture).jpg", "caption": "Old Massawa today"}
+      {"commons": "File:Massawa,_Eritrea_(Ottoman_architecture).jpg", "caption": "Old Massawa today"},
+      {"commons": "Massawa: the damage, Massawa.png", "caption": "Massawa Massacre"},
     ],
-    "Massawa: the damage": [Imperial Palace (8529061252).jpg, Massawa Old City Eritrea.jpg],
-    "Ona": [],
-    "Afabet": [],
-    "The air war": [],
-    "Asmara under siege": [],
-    "24 May 1991": []
+    
+    "Tessenei": [{"commons": "File:Tessenei, Tessenei.png", "caption": "Tessenei Massacre"}],
+    "Keren": [{"commons": "File:Keren, Keren.png", "caption": "Keren Massacre"}],
+    "Om Hajer": [{"commons": "File:Om Hajer, Om Hager.png", "caption": "Om Hager Massacre"}],
+    "Agordat": [{"commons": "File:Agordat, Agordat.png", "caption": "Agordat Massacre"}],
+    "Nakfa": [{"commons": "File:Nakfa, Nakfa.png", "caption": "Nakfa Massacre"}],
+    "Afabet": [{"commons": "File:Afabet, Afabet.png", "caption": "Afabet Massacre"}],
+    "Eilet": [{"commons": "File:Eilet, Eilet.png", "caption": "Eilet Massacre"}],
+    "Gumhot": [{"commons": "File:Gumhot, Gumhot.png", "caption": "Gumhot Massacre"}],
+    "Besikdira": [{"commons": "File:Besikdira, Besikdira.png", "caption": "Besikdira Massacre"}],
+    "Ona": [{"commons": "File:Ona, Ona.png", "caption": "Ona Massacre"}],
+    "Elabored": [{"commons": "File:Elabored, Elabored.png", "caption": "Elabored Massacre"}],
+    "Woki Debra": [{"commons": "File:Woki Debra, Woki Debra.png", "caption": "Woki Debra Massacre"}],
+    "Hirgigo": [{"commons": "File:Hirgigo, Hirgigo.png", "caption": "Hirgigo Massacre"}],
+    "Imberemi": [{"commons": "File:Imberemi, Imberemi.png", "caption": "Imberemi Massacre"}],
+    "She'eb and Maryam Gimbi Prison Asmara": [{"commons": "File:She'eb, She'eb.png", "caption": "She'eb Massacre"}]
   }
 }
