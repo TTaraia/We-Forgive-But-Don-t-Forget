@@ -143,7 +143,7 @@ _SRC = ("Sources:\n"
         "- UCA Dynamics of Asymmetric Democratization project, Ethiopia/Eritrea 1950-1993: https://uca.edu/politicalscience/dadm-project/sub-saharan-africa-region/ethiopiaeritrea-1950-1993\n"
         "- Eritrean oral-history accounts (Ona, Besikdira): https://zantana.net/stories/the-massacre-at-ona")
 HIST["en"].update({
- "title": ["We Forgive but don't forget!", "Remembering the War Years"], "intro_sub": "Eritrea: 1961 - 1991",
+ "title": ["We Forgive but don't forget!", "Remembering the Eritrean War Years"], "intro_sub": "1961 - 1991",
  "intro_spoken": "We Forgive but don't forget! Remembering the Eritrean war years, 1961 to 1991. A careful account for young viewers, based on human rights reports and historical research.",
  "outro_title": "Thank you for watching", "outro_sub": "Sources: Human Rights Watch, Africa Watch and historical research",
  "outro_spoken": "Thank you for watching. The sources are listed in the description. Figures are estimates, and sources sometimes disagree.",
