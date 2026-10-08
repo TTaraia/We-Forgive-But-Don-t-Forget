@@ -60,8 +60,10 @@ Remembering | 1961 - 1991 | view=eritrea; style=memorial
 No one knows the exact number of victims. Many were never counted, and records of destroyed villages are incomplete. By 1993, about 350,000 Eritreans were still living as refugees in Sudan. Human Rights Watch also documented abuses by the Eritrean fronts during the war, and the two main fronts fought each other in a civil war. This video focuses on the actions of the Ethiopian military toward civilians. Remembering the victims, and learning the facts, helps young people understand where their country's story comes from.
 -----
 The most significant dates | 1952–1991 | view=eritrea; style=occupation; mark=MostImportantDates
+The most significant dates during and immediately following the Ethiopian occupation of Eritrea
 -----
 The Federation Era | 1952–1962 | view=eritrea; style=occupation; mark=TheFederationEra
+The Federation Era was a turbulent 10-year period from September 15, 1952, to November 15, 1962, during which Eritrea was joined to the Ethiopian Empire as an autonomous unit under the sovereignty of the Ethiopian Crown
 -----
 The Federation Begins | September 15, 1952 | view=eritrea; style=occupation; mark=TheFederationBegins
 Following UN Resolution 390(A), Eritrea is officially federated with the Ethiopian Empire as an autonomous unit with its own parliament, constitution, and flag.
@@ -82,6 +84,7 @@ The Armed Struggle Begins | September 1, 1961 | view=eritrea; style=occupation; 
 Hamid Idris Awate fires the first shots against Ethiopian forces at Mount Adal, officially starting the 30-year Eritrean War of Independence.
 -----
 Annexation and the First Phase of War | 1962–1974 | view=eritrea; style=war; mark=AnnexationAndWar
+The formal annexation of Eritrea on November 15, 1962, marked the definitive collapse of the Federation Era and ignited the first major phase of the Eritrean War of Independence (1961–1974)
 -----
 The Federation is Dissolved | November 14, 1962 | view=eritrea; style=war; mark=FederationDissolved
 Under heavy military pressure from Haile Selassie, the Eritrean parliament is forced to dissolve itself, and Eritrea is officially annexed as Ethiopia’s 14th province.
@@ -90,6 +93,7 @@ The EPLF Splinter | 1970 | view=eritrea; style=war; mark=EPLFSplinter
 Internal ideological rifts within the ELF lead to the creation of the Eritrean People's Liberation Front (EPLF), which eventually becomes the dominant rebel group.
 -----
 The Derg Regime and Escalation | 1974–1988 | view=eritrea; style=war; mark=TheDergRegimeEscalation
+The Derg Regime and Escalation phase (1974–1988) transformed the Eritrean War of Independence from a low-level provincial insurgency into one of the largest, most violent, and heavily conventional conflicts on the African continent.
 -----
 The Fall of Haile Selassie | September 12, 1974 | view=eritrea; style=war; mark=TheFallOfHaileS
 The Ethiopian Emperor is overthrown in a military coup by a brutal communist junta known as the Derg, led eventually by Mengistu Haile Mariam, who severely escalates the war in Eritrea.
@@ -101,6 +105,7 @@ The Red Star Offensive | 1982 | view=eritrea; style=war; mark=TheRedStarOffensiv
 The Derg launches its largest military campaign to crush the EPLF at Nakfa but fails completely despite devastating casualties.
 -----
 The Road to Liberation | 1988–1993 | view=eritrea; style=war; mark=RoadToLiberation
+The Road to Liberation (1988–1993) was the final, decisive chapter of the 30-year conflict. Following the monumental victory at Afabet in 1988, the Eritrean People's Liberation Front (EPLF) seized the strategic initiative. Leveraging the collapse of Soviet backing and coordinating with Ethiopian rebel allies, the EPLF dismantled the occupying Derg army, liberated the country, and officially secured Eritrea's formal independence via a internationally supervised referendum.
 -----
 The Battle of Afabet | March 17–19, 1988 | view=eritrea; style=war; mark=BattleOfAfabet
 The EPLF destroys the Ethiopian army's commands at Afabet, a decisive turning point that British historian Basil Davidson called the most significant victory in Africa since Dien Bien Phu.
