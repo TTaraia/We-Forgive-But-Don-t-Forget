@@ -1,4 +1,4 @@
-# Remembering the Eritrean War Years and The Atrocities Committed by Ethiopian Soldiers, 1961-1991 (English). Every figure is from the sources listed in lang.py / sources_and_figures.md.
+#We forgive, but we don't forget! Remembering the Eritrean War Years and The Atrocities Committed by Ethiopian Soldiers, 1961-1991 (English). Every figure is from the sources listed in lang.py / sources_and_figures.md.
 # Header:  Title | Date label | map settings.   Scenes separated by -----
 # map settings: view=eritrea|horn ; style=memorial|independent|... ; mark=City,City ; note=analysis
 
