@@ -1,86 +1,58 @@
 {
   "slide": "alternate",
-  "_help": "slide = right | bottom | alternate.  Each scene (use its exact title from scenes_en.txt, or its number) lists photos. Two kinds: {\"commons\": \"File:Name.jpg\"} is licence-checked on Wikimedia Commons and credited automatically; {\"file\": \"photos/x.jpg\", \"credit\": \"Photo: Name\"} is your own photo or one you have permission to use. Use calm photos of places, memorials and towns: no victims, no graphic scenes.",
+  "default_credit": "Photo: Beyond All",
+  "_help": "Each scene title below must match scenes_en.txt exactly. Every scene holds a LIST [ ... ] of pictures. 'file' is the picture in the top folder (or photos/). Put one credit line in default_credit, or add a 'credit' to a single picture. Calm pictures of places only: no victims, no graphic scenes.",
   "scenes": {
+    "Barka burns": [
+      {"file": "tessenei.png", "caption": "Tessenei: 21 prisoners executed here, 12 February 1967"}
+    ],
+    "More villages destroyed": [
+      {"file": "eilet.png", "caption": "Eilet: village burned, July 1967"},
+      {"file": "bumhot.png", "caption": "Gumhot: village burned, July 1967"},
+      {"file": "keren.png", "caption": "Keren and the Senhit villages, November 1967"}
+    ],
+    "A mosque near Keren": [
+      {"file": "besikdira.png", "caption": "Besikdira, near Keren: killings on 30 November 1970"}
+    ],
+    "Ona": [
+      {"file": "ona.png", "caption": "Ona, on the edge of Keren: attack of 1 December 1970"}
+    ],
+    "State of emergency": [
+      {"file": "elabored.png", "caption": "Elabored: about 60 civilians killed in a mosque, 27 January 1971"}
+    ],
+    "Om Hajer": [
+      {"file": "om_hajer.png", "caption": "Om Hajer, near the Sudan border: July 1974"}
+    ],
+    "Asmara": [
+      {"file": "woki_duba.png", "caption": "A village outside Asmara where civilians were killed in 1975"},
+      {"file": "asmara.png", "caption": "Asmara, February 1975"}
+    ],
+    "A year of destruction": [
+      {"file": "agordat.png", "caption": "Agordat: massacre reported on 9 March 1975 (Eritrean sources)"},
+      {"file": "hirgigo.png", "caption": "Hirgigo: massacre reported on 17 April 1975 (Eritrean sources)"}
+    ],
+    "Counting the cost": [
+      {"file": "imberemi.png", "caption": "Imberemi, Red Sea coast: civilians killed by a naval unit, March 1977"}
+    ],
+    "The air war": [
+      {"file": "nakfa.png", "caption": "Nakfa: destroyed by ten years of air raids"}
+    ],
+    "She'eb": [
+      {"file": "sheeb.png", "caption": "She'eb, Semhar region: 12 May 1988"}
+    ],
+    "Afabet": [
+      {"file": "afabet.png", "caption": "Afabet: air raids of 3 and 4 April 1990"}
+    ],
     "Massawa under the bombs": [
-      {"commons": "File:Massawa,_Eritrea_(Ottoman_architecture).jpg", "caption": "Old Massawa today"},
-      {"commons": "Massawa: the damage, Massawa.png", "caption": "Massawa Massacre"}],
-
-  "2": {
-      "image": "tessenei.jpg",
-      "caption": "Site of the 1967 prison executions."
-      },
-  "3": {
-      "image": "massawa.jpg",
-      "caption": "The Red Sea Port under siege and repeated bombings, 1990."
-      },
-  "4": {
-      "image": "keren.jpg",
-      "caption": "Target of air raids and the Senhit region destruction, 1967."
-      },
-  "5": {
-      "image": "woki_duba.jpg",
-      "caption": "Village outside Asmara, site of 1975 killings."
-      },
-
-    "6": {
-      "image": "afabet.jpg",
-      "caption": "Site of the 1990 air raid, previously the location of a major battle."
-    },
-    "7": {
-      "image": "agordat.jpg",
-      "caption": "Town in the western lowlands, 1975 massacre site."
-    },
-    "8": {
-      "image": "asmara.jpg",
-      "caption": "Capital city, site of the 1975 massacre and 1991 liberation."
-    },
-    "9": {
-      "image": "besikdira.jpg",
-      "caption": "Site of mass killings, November 1970."
-    },
-
-    "10": {
-      "image": "eilet.jpg",
-      "caption": "Village in eastern lowlands burned, July 1967."
-    },
-    "11": {
-      "image": "elabored.jpg",
-      "caption": "Village mosque massacre, January 1971."
-    },
-    "12": {
-      "image": "bumhot.jpg",
-      "caption": "Village in eastern lowlands destroyed, July 1967."
-    },
-    "13": {
-      "image": "hirgigo.jpg",
-      "caption": "Coastal village massacre, April 1975."
-    },
-
-    "14": {
-      "image": "imberemi.jpg",
-      "caption": "Coastal village massacre, April 1975."
-      },
-  "15": {
-      "image": "maryam_gimbi.jpg",
-      "caption": "Documented site of detainee abuse and killings during the war."
-      },
-  "16": {
-      "image": "nakfa.jpg",
-      "caption": "Symbol of resistance; town completely destroyed by 1990."
-      },
-  "17": {
-      "image": "om_hajer.jpg",
-      "caption": "Village near the Sudan border, 1974 stadium massacre site."
-      },
-
-    "18": {
-      "image": "ona.jpg",
-      "caption": "Village on the edge of Keren, destroyed December 1970."
-    },
-    "19": {
-      "image": "sheeb.jpg",
-      "caption": "Village in Semhar region, 1988 massacre site."
-    }
-  }
+      {"file": "massawa.png", "caption": "Massawa: bombed from the air, February to June 1990"},
+      {"commons": "File:Massawa,_Eritrea_(Ottoman_architecture).jpg", "caption": "Old Massawa today"}
+    ],
+    "Massawa: the damage": [
+      {"file": "massawa_damage.png", "caption": "Massawa after the 1990 air raids"}
+    ],
+    "24 May 1991": [
+      {"file": "asmara.png", "caption": "Asmara, 24 May 1991"}
+    ]
+  },
+  "_not_used": "maryam_gimbi.png: this place is not in the script and I could not verify the caption 'documented site of detainee abuse and killings'. Add a scene with a source first, or leave it out."
 }
