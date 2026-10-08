@@ -134,7 +134,7 @@ def overlay(kind, sc, path, n, total, spec):
     h = lang.HIST[V]; img = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
     if kind == "intro":
         d.rounded_rectangle([140, 180, 1140, 540], 24, fill=PANEL)
-        T(d, (W//2, 280), h["title"][0], 64, INK, "m"); T(d, (W//2, 365), h["title"][1], 64, INK, "m"); T(d, (W//2, 460), h["intro_sub"], 18, ACC, "m")
+        T(d, (W//2, 280), h["title"][0], 32, INK, "m"); T(d, (W//2, 365), h["title"][1], 32, INK, "m"); T(d, (W//2, 460), h["intro_sub"], 32, ACC, "m")
     elif kind == "outro":
         d.rounded_rectangle([140, 200, 1140, 520], 24, fill=PANEL)
         T(d, (W//2, 320), h["outro_title"], 56, INK, "m")
