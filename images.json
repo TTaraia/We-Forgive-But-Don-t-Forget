@@ -46,7 +46,7 @@
     ],
     "Massawa under the bombs": [
       {"file": "massawa.png", "caption": "Massawa: bombed from the air, February to June 1990"},
-      {"commons": "File:Massawa,_Eritrea_(Ottoman_architecture).jpg", "caption": "Old Massawa today"}
+      {"file": "Imperial_Palace_28852906125229.jpg", "caption": "The Imperial Palace at Massawa, Eritrea, erected by an Egyptian governor in 1872, was heavily damaged during the struggle for independence. Haile Selassie once used it as his winter residence, 1990"}
     ],
     "Massawa: the damage": [
       {"file": "massawa_damage.png", "caption": "Massawa after the 1990 air raids"}
@@ -54,6 +54,5 @@
     "24 May 1991": [
       {"file": "asmara.png", "caption": "Asmara, 24 May 1991"}
     ]
-  },
-  "_not_used": "maryam_gimbi.png: this place is not in the script and I could not verify the caption 'documented site of detainee abuse and killings'. Add a scene with a source first, or leave it out."
+  }
 }
