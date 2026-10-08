@@ -3,7 +3,7 @@
   "default_credit": "Photo: Beyond All/PlanZ",
   "_help": "Each scene title below must match scenes_en.txt exactly. Every scene holds a LIST [ ... ] of pictures. 'file' is the picture in the top folder (or photos/). Put one credit line in default_credit, or add a 'credit' to a single picture. Calm pictures of places only: no victims, no graphic scenes.",
   "scenes": {
-    "The first shot by Awate": [
+    "The first shot by Hamid Idris Awate": [
       {"file": "hamididrisawate.png", "caption": "Nakfa: It all started with the first shot by Hamid Idris Awate in Adal!"}
     ],
     "Barka burns": [
