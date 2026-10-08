@@ -162,22 +162,25 @@ def photo_config():
     return json.load(open("images.json", encoding="utf-8")) if os.path.exists("images.json") else {}
 
 def resolve_photos(cfg, title, idx):
-    """Returns [{path, caption, credit, page}] for a scene. Commons photos are licence-checked and skipped if not reusable."""
-    entries = cfg.get("scenes", {}).get(title) or cfg.get("scenes", {}).get(str(idx + 1)) or []
-    out = []
-    for e in entries:
+    """Returns [{path, caption, credit, page}] for a scene. Commons photos are licence-checked and skipped if not reusable.
+    Forgiving: accepts "image" for "file", a single {...} instead of a list, a missing folder/extension, and a top-level default_credit."""
+    import check_images as ci
+    scn = cfg.get("scenes", {}); key = ci.scene_key(scn, title, idx)
+    default = cfg.get("default_credit", ""); out = []
+    for e in (ci.as_list(scn[key]) if key else []):
         try:
-            if e.get("commons"):
+            if e.get("commons") and not os.path.exists(e["commons"]):
                 import commons_tools as ct
                 info = ct.lookup(e["commons"])
-                if not info: print("photo skipped (not found):", e["commons"]); continue
+                if not info: print("photo skipped (not found on Commons):", e["commons"]); continue
                 if not info["allowed"]: print(f"photo skipped (licence '{info['license']}' not reusable):", info["title"]); continue
-                path = ct.download(info["url"], info["title"])
-                credit = f"Photo: {info['author']}, {info['license']}"; page = info["page"]
+                path = ct.download(info["url"], info["title"]); credit = f"Photo: {info['author']}, {info['license']}"; page = info["page"]
             else:
-                path, credit, page = e["file"], e.get("credit", ""), e.get("page", "")
-                if not os.path.exists(path): print("photo skipped (file missing):", path); continue
-                if not credit: print("photo skipped (local photos need a 'credit' line):", path); continue
+                name = e.get("file") or e.get("image") or e.get("commons")
+                path = ci.find_file(name)
+                if not path: print("photo skipped (file not found):", name); continue
+                credit, page = e.get("credit") or default, e.get("page", "")
+                if not credit or "REPLACE" in credit: print(f"photo skipped (no credit; add \"credit\" or a top-level \"default_credit\"): {name}"); continue
             out.append({"path": path, "caption": e.get("caption", ""), "credit": credit, "page": page})
         except Exception as ex:
             print("photo skipped:", e, "-", ex)
@@ -251,6 +254,9 @@ if __name__ == "__main__":
     adur = [dur(a) for a in audio]
     durs = [max(ad + (0.8 if it[0] == "voice" else 0), MIN_SCENE if it[1] == "scene" else 0) for ad, it in zip(adur, items)]
     total = len(scs); parts, starts, cum = [], [], 0.0; pcfg = photo_config(); credits = []
+    try:
+        import check_images; check_images.check(quiet=False)
+    except Exception as ex: print("image check skipped:", ex)
     for k, ((kind, role, idx), a, D) in enumerate(zip(items, audio, durs)):
         spec = en[idx]["spec"] if role == "scene" else {"view": "horn", "style": "independent"}
         histmap.render(countries, spec, V).save(f"{V}_m{k}.png")
