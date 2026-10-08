@@ -92,7 +92,7 @@ def add_bed(video_in, video_out, total):
     """Music under the narration. Two modes:
     - song.mp3 present: your song (with vocals) plays alone for the first and last ~14 s; a vocal-free bed plays quietly in between.
     - otherwise: the bed (music.mp3 or the built-in instrumental) is loud for the first/last 10 s and quiet (BED_LEVEL) under the voice."""
-    lvl = float(os.environ.get("BED_LEVEL", "0.16"))
+    lvl = float(os.environ.get("BED_LEVEL", "0.08"))
     src, plain_loop = long_bed(bed_file(), total)
     loop = ["-stream_loop", "-1"] if plain_loop else []
     song = next((f for f in ("song.mp3", "song.m4a", "song.wav") if os.path.exists(f)), None)
