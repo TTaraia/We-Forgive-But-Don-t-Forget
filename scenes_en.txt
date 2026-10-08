@@ -38,7 +38,7 @@ In March 1977, a naval unit killed between 100 and 160 civilians at the Red Sea 
 The air war | The 1980s | view=eritrea; style=memorial; mark=Nakfa
 Through the 1980s, Eritrea's liberated areas were bombed from the air. In 1990, Human Rights Watch reported that the town of Nakfa had been completely destroyed by ten years of repeated air raids. An Ethiopian pilot captured in 1984 said the order was to bomb everything that moves. Markets, farming and travel moved to the night, so that people could avoid the planes. Villagers learned not to wear bright colors or light fires in the daytime.
 -----
-She'eb | 12 May 1988 | view=eritrea; style=memorial; mark=She'eb
+Sheeb | 12 May 1988 | view=eritrea; style=memorial; mark=Sheeb
 In March 1988, Eritrean forces won the Battle of Afabet. In April, the Ethiopian government expelled foreign aid agencies, and on the 14th of May it declared a state of emergency. On the 12th of May, 1988, soldiers and tanks surrounded the village of She'eb, in the Semhar region, and told the villagers to gather for a meeting. Human Rights Watch documented about 400 civilians killed there, and at least 100 more in nearby villages. About 110,000 people were displaced that year, and about 40,000 fled to Sudan.
 -----
 Afabet | 3 - 4 April 1990 | view=eritrea; style=memorial; mark=Afabet
@@ -59,10 +59,11 @@ On the 24th of May, 1991, Eritrean fighters entered Asmara as the Ethiopian army
 Remembering | 1961 - 1991 | view=eritrea; style=memorial
 No one knows the exact number of victims. Many were never counted, and records of destroyed villages are incomplete. By 1993, about 350,000 Eritreans were still living as refugees in Sudan. Human Rights Watch also documented abuses by the Eritrean fronts during the war, and the two main fronts fought each other in a civil war. This video focuses on the actions of the Ethiopian military toward civilians. Remembering the victims, and learning the facts, helps young people understand where their country's story comes from.
 -----
-The most significant dates during and immediately following the Ethiopian occupation of Eritrea | 1952–1991 | view=eritrea; style=occupation; mark=Eritrea
+The most significant dates during and immediately following the Ethiopian occupation of Eritrea | 1952–1991 | view=eritrea; style=occupation; mark=MostImportantDates
  
-The Federation Era (1952–1962)
-• September 15, 1952: The Federation Begins. Following UN Resolution 390(A), Eritrea is officially federated with the Ethiopian Empire as an autonomous unit with its own parliament, constitution, and flag.
+The Federation Era | 1952–1962 | view=eritrea; style=occupation; mark=FederationAndWar
+The Federation Begins | September 15, 1952 | view=eritrea; style=occupation; mark=TheFederationBegins
+Following UN Resolution 390(A), Eritrea is officially federated with the Ethiopian Empire as an autonomous unit with its own parliament, constitution, and flag.
 • 1956: Language Suppression. Emperor Haile Selassie bans the teaching and official use of native Eritrean languages (Tigrinya and Arabic), forcing Amharic as the sole official language.
 • 1958: The Flag Lowered. The Ethiopian government officially lowers the Eritrean flag and replaces it with the Ethiopian imperial flag.
 • 1958: The ELM is Founded. The underground Eritrean Liberation Movement (ELM) is formed in Sudan to organize secret political resistance against Ethiopian encroachment.
