@@ -1,6 +1,6 @@
 {
   "slide": "alternate",
-  "default_credit": "Photo: Beyond All",
+  "default_credit": "Photo: Beyond All/PlanZ",
   "_help": "Each scene title below must match scenes_en.txt exactly. Every scene holds a LIST [ ... ] of pictures. 'file' is the picture in the top folder (or photos/). Put one credit line in default_credit, or add a 'credit' to a single picture. Calm pictures of places only: no victims, no graphic scenes.",
   "scenes": {
     "Barka burns": [
@@ -8,7 +8,7 @@
     ],
     "More villages destroyed": [
       {"file": "eilet.png", "caption": "Eilet: village burned, July 1967"},
-      {"file": "bumhot.png", "caption": "Gumhot: village burned, July 1967"},
+      {"file": "gumhot.png", "caption": "Gumhot: village burned, July 1967"},
       {"file": "keren.png", "caption": "Keren and the Senhit villages, November 1967"}
     ],
     "A mosque near Keren": [
@@ -26,6 +26,7 @@
     "Asmara": [
       {"file": "woki_duba.png", "caption": "A village outside Asmara where civilians were killed in 1975"},
       {"file": "asmara.png", "caption": "Asmara, February 1975"}
+      {"file": "maryam_gimbi.png", "caption": "Documented site of detainee abuse and killings during the war."}
     ],
     "A year of destruction": [
       {"file": "agordat.png", "caption": "Agordat: massacre reported on 9 March 1975 (Eritrean sources)"},
