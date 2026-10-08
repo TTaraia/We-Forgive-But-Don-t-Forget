@@ -52,10 +52,81 @@
       {"file": "Imperial_Palace_28852906125229.jpg", "caption": "The Imperial Palace at Massawa, Eritrea, erected by an Egyptian governor in 1872, was heavily damaged during the struggle for independence. Haile Selassie once used it as his winter residence, 1990"}
     ],
     "Massawa: the damage": [
-      {"file": "massawa_damage.png", "caption": "Massawa after the 1990 air raids"}
+      {"file": "ImperialPalaceMassawa.png", "caption": "Massawa after the 1990 air raids"}
     ],
     "24 May 1991": [
       {"file": "asmara.png", "caption": "Asmara, 24 May 1991"}
+    ],
+
+
+
+
+
+    
+
+
+    "The most significant dates": [
+      {"file": "MostImportantDates.png", "caption": "Eritrea: The most significant dates during and immediately following the Ethiopian occupation of Eritrea"}
+    ],
+    "The Federation Era": [
+      {"file": "TheFederationEra.png", "caption": "Federation: The Federation Era: 1952 - 1962"}
+    ],
+    "The Federation Begins": [
+      {"file": "TheFederationBegins.png", "caption": "Federation: Following UN Resolution 390(A), Eritrea is officially federated with the Ethiopian Empire as an autonomous unit with its own parliament, constitution, and flag."}
+    ],
+    "Language Suppression": [
+      {"file": "LanguageSuppression.png", "caption": "Language Suppression: Emperor Haile Selassie bans the teaching and official use of native Eritrean languages (Tigrinya and Arabic), forcing Amharic as the sole official language."}
+    ],
+    "The Flag Lowered": [
+      {"file": "TheFlagLowered.png", "caption": "Eritrean Flag: The Ethiopian government officially lowers the Eritrean flag and replaces it with the Ethiopian imperial flag."}
+    ],
+    "The ELM is Founded": [
+      {"file": "ElmBegan.png", "caption": "Eritrean Liberation Movement: The underground Eritrean Liberation Movement (ELM) is formed in Sudan to organize secret political resistance against Ethiopian encroachment."}
+    ],
+    "The ELF is Founded": [
+      {"file": "ElfFounded.png", "caption": "The Eritrean Liberation Front: ELF is established in Cairo, shifting the independence movement toward an armed struggle strategy."}
+    ],
+    "The Armed Struggle Begins": [
+      {"file": "ArmedStruggleBegins.png", "caption": "The Armed Struggle Begins: Hamid Idris Awate fires the first shots against Ethiopian forces at Mount Adal, officially starting the 30-year Eritrean War of Independence."}
+    ],
+    "Annexation and the First Phase of War": [
+      {"file": "AnnexationAndWar.png", "caption": "Annexation and War: Annexation and the First Phase of War)"}
+    ],
+    "The Federation is Dissolved": [
+      {"file": "FederationDissolved.png", "caption": "Federation is Dissolved: Under heavy military pressure from Haile Selassie, the Eritrean parliament is forced to dissolve itself, and Eritrea is officially annexed as Ethiopia’s 14th province."}
+    ],
+    "The EPLF Splinter": [
+      {"file": "EPLFSplinter.png", "caption": "The EPLF Splinter: nternal ideological rifts within the ELF lead to the creation of the Eritrean People's Liberation Front (EPLF), which eventually becomes the dominant rebel group."}
+    ],
+    "The Derg Regime and Escalation": [
+      {"file": "TheDergRegimeEscalation.png", "caption": "The Derg Regime Escalation"}
+    ],
+    "The Fall of Haile Selassie": [
+      {"file": "TheFallOfHaileS.png", "caption": "The Fall of Haile Selassie: The Ethiopian Emperor is overthrown in a military coup by a brutal communist junta known as the Derg, led eventually by Mengistu Haile Mariam, who severely escalates the war in Eritrea."}
+    ],
+    "The First Strategic Withdrawal": [
+      {"file": "StrategicWithdrawal.png", "caption": "Strategic Withdrawal: After capturing nearly all of Eritrea, the EPLF is forced into a tactical retreat to the northern mountains of Nakfa due to massive Soviet military intervention backing the Ethiopian army."}
+      ],
+    "The Red Star Offensive": [
+      {"file": "TheRedStarOffensive.png", "caption": "The Red Star Offensive: The Derg launches its largest military campaign to crush the EPLF at Nakfa but fails completely despite devastating casualties."}
+    ],
+    "The Road to Liberation": [
+      {"file": "RoadToLiberation.png", "caption": "The Road to Liberation 1988–1993"}
+    ],
+    "The Battle of Afabet": [
+      {"file": "BattleOfAfabet.png", "caption": "The EPLF destroys the Ethiopian army's commands at Afabet, a decisive turning point that British historian Basil Davidson called the most significant victory in Africa since Dien Bien Phu."}
+    ],
+    "Operation Fenkil": [
+      {"file": "OperationFenkil.png", "caption": "The EPLF launches a massive surprise amphibious and land assault to liberate the strategic port city of Massawa, cutting off the primary supply route for Ethiopian troops in Asmara."}
+    ],
+    "The Fall of Asmara": [
+      {"file": "May24.png", "caption": "EPLF forces enter the capital city of Asmara, completely defeating the remaining Ethiopian garrison and ending 39 years of Ethiopian rule."}
+      ],
+    "The Independence Referendum": [
+      {"file": "Referendum.png", "caption": "A UN-monitored referendum is held where 99.8% of Eritreans vote in favor of sovereignty."}
+    ],
+    "Official Independence": [
+      {"file": "OfficialIndependence.png", "caption": "Eritrea officially declares its sovereign independence and joins the United Nations, exactly two years after de facto liberation."}
     ]
   }
 }
