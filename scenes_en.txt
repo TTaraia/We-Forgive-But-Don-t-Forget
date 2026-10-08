@@ -60,31 +60,59 @@ Remembering | 1961 - 1991 | view=eritrea; style=memorial
 No one knows the exact number of victims. Many were never counted, and records of destroyed villages are incomplete. By 1993, about 350,000 Eritreans were still living as refugees in Sudan. Human Rights Watch also documented abuses by the Eritrean fronts during the war, and the two main fronts fought each other in a civil war. This video focuses on the actions of the Ethiopian military toward civilians. Remembering the victims, and learning the facts, helps young people understand where their country's story comes from.
 -----
 The most significant dates during and immediately following the Ethiopian occupation of Eritrea | 1952–1991 | view=eritrea; style=occupation; mark=MostImportantDates
- 
-The Federation Era | 1952–1962 | view=eritrea; style=occupation; mark=FederationAndWar
+-----
+The Federation Era | 1952–1962 | view=eritrea; style=occupation; mark=TheFederationEra
+-----
 The Federation Begins | September 15, 1952 | view=eritrea; style=occupation; mark=TheFederationBegins
 Following UN Resolution 390(A), Eritrea is officially federated with the Ethiopian Empire as an autonomous unit with its own parliament, constitution, and flag.
-• 1956: Language Suppression. Emperor Haile Selassie bans the teaching and official use of native Eritrean languages (Tigrinya and Arabic), forcing Amharic as the sole official language.
-• 1958: The Flag Lowered. The Ethiopian government officially lowers the Eritrean flag and replaces it with the Ethiopian imperial flag.
-• 1958: The ELM is Founded. The underground Eritrean Liberation Movement (ELM) is formed in Sudan to organize secret political resistance against Ethiopian encroachment.
-• 1960: The ELF is Founded. The Eritrean Liberation Front (ELF) is established in Cairo, shifting the independence movement toward an armed struggle strategy.
-• September 1, 1961: The Armed Struggle Begins. Hamid Idris Awate fires the first shots against Ethiopian forces at Mount Adal, officially starting the 30-year Eritrean War of Independence.
-
-Annexation and the First Phase of War (1962–1974)
-
-• November 14, 1962: The Federation is Dissolved. Under heavy military pressure from Haile Selassie, the Eritrean parliament is forced to dissolve itself, and Eritrea is officially annexed as Ethiopia’s 14th province.
-• 1970: The EPLF Splinter. Internal ideological rifts within the ELF lead to the creation of the Eritrean People's Liberation Front (EPLF), which eventually becomes the dominant rebel group.
-
-The Derg Regime and Escalation (1974–1988)
-
-• September 12, 1974: The Fall of Haile Selassie. The Ethiopian Emperor is overthrown in a military coup by a brutal communist junta known as the Derg, led eventually by Mengistu Haile Mariam, who severely escalates the war in Eritrea.
-• 1977: The First Strategic Withdrawal. After capturing nearly all of Eritrea, the EPLF is forced into a tactical retreat to the northern mountains of Nakfa due to massive Soviet military intervention backing the Ethiopian army.
-• 1982: The Red Star Offensive. The Derg launches its largest military campaign to crush the EPLF at Nakfa but fails completely despite devastating casualties.
-
-The Road to Liberation (1988–1993)
-
-• March 17–19, 1988: The Battle of Afabet. The EPLF destroys the Ethiopian army's commands at Afabet, a decisive turning point that British historian Basil Davidson called the most significant victory in Africa since Dien Bien Phu.
-• February 1990: Operation Fenkil. The EPLF launches a massive surprise amphibious and land assault to liberate the strategic port city of Massawa, cutting off the primary supply route for Ethiopian troops in Asmara.
-• May 24, 1991: The Fall of Asmara. EPLF forces enter the capital city of Asmara, completely defeating the remaining Ethiopian garrison and ending 39 years of Ethiopian rule.
-• April 23–25, 1993: The Independence Referendum. A UN-monitored referendum is held where 99.8% of Eritreans vote in favor of sovereignty.
-• May 24, 1993: Official Independence. Eritrea officially declares its sovereign independence and joins the United Nations, exactly two years after de facto liberation.
+-----
+Language Suppression | 1956 | view=eritrea; style=occupation; mark=LanguageSuppression
+Emperor Haile Selassie bans the teaching and official use of native Eritrean languages (Tigrinya and Arabic), forcing Amharic as the sole official language.
+-----
+The Flag Lowered | 1958 | view=eritrea; style=occupation; mark=TheFlagLowered
+The Ethiopian government officially lowers the Eritrean flag and replaces it with the Ethiopian imperial flag.
+-----
+The ELM is Founded | 1958 | view=eritrea; style=occupation; mark=ElmBegan
+The underground Eritrean Liberation Movement (ELM) is formed in Sudan to organize secret political resistance against Ethiopian encroachment.
+-----
+The ELF is Founded | 1960 | view=eritrea; style=occupation; mark=ElfFounded
+The Eritrean Liberation Front (ELF) is established in Cairo, shifting the independence movement toward an armed struggle strategy.
+-----
+The Armed Struggle Begins | September 1, 1961 | view=eritrea; style=occupation; mark=ArmedStruggleBegins
+Hamid Idris Awate fires the first shots against Ethiopian forces at Mount Adal, officially starting the 30-year Eritrean War of Independence.
+-----
+Annexation and the First Phase of War | 1962–1974 | view=eritrea; style=war; mark=AnnexationAndWar
+-----
+The Federation is Dissolved | November 14, 1962 | view=eritrea; style=war; mark=FederationDissolved
+Under heavy military pressure from Haile Selassie, the Eritrean parliament is forced to dissolve itself, and Eritrea is officially annexed as Ethiopia’s 14th province.
+-----
+The EPLF Splinter | 1970 | view=eritrea; style=war; mark=EPLFSplinter
+Internal ideological rifts within the ELF lead to the creation of the Eritrean People's Liberation Front (EPLF), which eventually becomes the dominant rebel group.
+-----
+The Derg Regime and Escalation | 1974–1988 | view=eritrea; style=war; mark=TheDergRegimeEscalation
+-----
+The Fall of Haile Selassie | September 12, 1974 | view=eritrea; style=war; mark=TheFallOfHaileS
+The Ethiopian Emperor is overthrown in a military coup by a brutal communist junta known as the Derg, led eventually by Mengistu Haile Mariam, who severely escalates the war in Eritrea.
+-----
+The First Strategic Withdrawal | 1977 | view=eritrea; style=war; mark=StrategicWithdrawal
+After capturing nearly all of Eritrea, the EPLF is forced into a tactical retreat to the northern mountains of Nakfa due to massive Soviet military intervention backing the Ethiopian army.
+-----
+The Red Star Offensive | 1982 | view=eritrea; style=war; mark=TheRedStarOffensive
+The Derg launches its largest military campaign to crush the EPLF at Nakfa but fails completely despite devastating casualties.
+-----
+The Road to Liberation | 1988–1993 | view=eritrea; style=war; mark=RoadToLiberation
+-----
+The Battle of Afabet | March 17–19, 1988 | view=eritrea; style=war; mark=BattleOfAfabet
+The EPLF destroys the Ethiopian army's commands at Afabet, a decisive turning point that British historian Basil Davidson called the most significant victory in Africa since Dien Bien Phu.
+-----
+Operation Fenkil | February 1990 | view=eritrea; style=war; mark=OperationFenkil
+The EPLF launches a massive surprise amphibious and land assault to liberate the strategic port city of Massawa, cutting off the primary supply route for Ethiopian troops in Asmara.
+-----
+The Fall of Asmara | May 24, 1991 | view=eritrea; style=war; mark=May24
+EPLF forces enter the capital city of Asmara, completely defeating the remaining Ethiopian garrison and ending 39 years of Ethiopian rule.
+-----
+The Independence Referendum | April 23–25, 1993 | view=eritrea; style=war; mark=Referendum
+A UN-monitored referendum is held where 99.8% of Eritreans vote in favor of sovereignty.
+-----
+Official Independence | May 24, 1993 | view=eritrea; style=war; mark=OfficialIndependence
+Eritrea officially declares its sovereign independence and joins the United Nations, exactly two years after de facto liberation.
