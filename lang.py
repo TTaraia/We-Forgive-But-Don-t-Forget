@@ -135,7 +135,7 @@ HIST["ti"].update({
  "disclosure": "ምልክታ፦ ካርታታት ዘመናዊ ዶባት ንምርኣይ ጥራይ የርእዩ። ትሕተ-ጽሑፋት ብእንግሊዝኛ፣ ኣምሓርኛን ትግርኛን ይርከቡ።",
  "chapters": "ምዕራፋት", "chapter_intro": "መእተዊ", "chapter_outro": "ምንጭታትን የቐንየልናን"})
 
-# ---------- PROJECT: Remembering the Eritrean War Years (English first; am/ti still need translating) ----------
+# ---------- PROJECT: We Forgive but don't forget! Remembering the Eritrean War Years (English first; am/ti still need translating) ----------
 _SRC = ("Sources:\n"
         "- Human Rights Watch / Africa Watch, Evil Days: 30 Years of War and Famine in Ethiopia (1991), ch. 2 'Scorched Earth in Eritrea, 1961-77': https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/c2eritre.pdf\n"
         "- Same book, ch. 14 'The Road to Asmara: Eritrea, 1988-91': https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/d4afabet.pdf\n"
@@ -143,11 +143,11 @@ _SRC = ("Sources:\n"
         "- UCA Dynamics of Asymmetric Democratization project, Ethiopia/Eritrea 1950-1993: https://uca.edu/politicalscience/dadm-project/sub-saharan-africa-region/ethiopiaeritrea-1950-1993\n"
         "- Eritrean oral-history accounts (Ona, Besikdira): https://zantana.net/stories/the-massacre-at-ona")
 HIST["en"].update({
- "title": ["Remembering the", "Eritrean War Years"], "intro_sub": "1961 - 1991",
- "intro_spoken": "Remembering the Eritrean war years, 1961 to 1991. A careful account for young viewers, based on human rights reports and historical research.",
+ "title": ["We Forgive but don't forget! Remembering the", "Eritrean War Years"], "intro_sub": "1961 - 1991",
+ "intro_spoken": "We Forgive but don't forget! Remembering the Eritrean war years, 1961 to 1991. A careful account for young viewers, based on human rights reports and historical research.",
  "outro_title": "Thank you for watching", "outro_sub": "Sources: Human Rights Watch, Africa Watch and historical research",
  "outro_spoken": "Thank you for watching. The sources are listed in the description. Figures are estimates, and sources sometimes disagree.",
- "video_title": "Remembering the Eritrean War Years, 1961-1991 (for young viewers)",
+ "video_title": "We Forgive but don't forget! Remembering the Eritrean War Years, 1961-1991 (for young viewers)",
  "desc": "A careful, non-graphic account of major attacks on civilians by the Ethiopian military during Eritrea's war of independence, from 1 September 1961 to 24 May 1991, for young people who did not live through it. Figures are estimates and sources sometimes disagree; each scene says where the numbers come from.",
  "sources": _SRC,
  "disclosure": "Notes: narration uses a synthetic (AI) voice. Maps show modern borders for orientation only. This video describes violence against civilians but shows no graphic images. Human Rights Watch also documented abuses by the Eritrean fronts; this video focuses on the Ethiopian military's actions.",
