@@ -152,6 +152,6 @@ HIST["en"].update({
  "sources": _SRC,
  "disclosure": "Notes: narration uses a synthetic (AI) voice. Maps show modern borders for orientation only. This video describes violence against civilians but shows no graphic images. Human Rights Watch also documented abuses by the Eritrean fronts; this video focuses on the Ethiopian military's actions.",
  "chapters": "Chapters", "chapter_intro": "Introduction", "chapter_outro": "Sources and thanks"})
-HIST["en"]["styles"]["memorial"] = "Eritrea under Ethiopian rule (1962-1991)"
+HIST["en"]["styles"]["memorial"] = "Eritrea Under Ethiopian Colonial Rule (1962-1991)"
 for _c in ("am", "ti"):   # placeholders: translate before building these languages
     HIST[_c] = dict(HIST["en"])
