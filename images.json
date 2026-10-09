@@ -100,13 +100,13 @@
       {"file": "derg_regime.png", "caption": "The Derg Regime Escalation"}
     ],
     "The Fall of Haile-Selassie": [
-      {"file": "TheFallOfHaileS.png", "caption": "The Fall of Haile Selassie: The Ethiopian Emperor is overthrown in a military coup by a brutal communist junta known as the Derg, led eventually by Mengistu Haile-Mariam, who severely escalates the war in Eritrea."}
+      {"file": "fall_HaileSelasie.png", "caption": "The Fall of Haile Selassie: The Ethiopian Emperor is overthrown in a military coup by a brutal communist junta known as the Derg, led eventually by Mengistu Haile-Mariam, who severely escalates the war in Eritrea."}
     ],
     "The First Strategic Withdrawal": [
-      {"file": "StrategicWithdrawal.png", "caption": "Strategic Withdrawal: After capturing nearly all of Eritrea, the EPLF is forced into a tactical retreat to the northern mountains of Nakfa due to massive Soviet military intervention backing the Ethiopian army."}
+      {"file": "strategic_withdrawal.png", "caption": "Strategic Withdrawal: After capturing nearly all of Eritrea, the EPLF is forced into a tactical retreat to the northern mountains of Nakfa due to massive Soviet military intervention backing the Ethiopian army."}
       ],
     "The Red Star Offensive": [
-      {"file": "TheRedStarOffensive.png", "caption": "The Red Star Offensive: The Derg launches its largest military campaign to crush the EPLF at Nakfa but fails completely despite devastating casualties."}
+      {"file": "redstar_offensive.png", "caption": "The Red Star Offensive: The Derg launches its largest military campaign to crush the EPLF at Nakfa but fails completely despite devastating casualties."}
     ],
     "The Road To Liberation": [
       {"file": "RoadToLiberation.png", "caption": "The Road to Liberation 1988–1993"}
