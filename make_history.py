@@ -299,27 +299,40 @@ if __name__ == "__main__":
         random.shuffle(directions)
         fc = f"[0:v]crop=2432:1368:x='{xs}+({xe - xs})*t/{D:.3f}':y='{ys}+({ye - ys})*t/{D:.3f}',scale={W}:{H}:flags=bicubic[bg];[bg][1:v]overlay=0:0[v0]"
         extra, last = [], "v0"
+        
         for j in range(n_ph):
-            png = f"{V}_p{k}_{j}.png"; make_card(photos[j], png)
-            
-    directions = ["left", "right", "top", "bottom"]
-    
-    # Shuffle the directions for each scene
-    if j == 0:
-        random.shuffle(directions)
-    
-    direction = directions[j % len(directions)]
-    
-    ex, ey = slide_expr(
-        PHOTO_X - 20,
-        PHOTO_Y - 20,
-        slots[j][0],
-        slots[j][1],
-        direction
-    )
-            fc += f";[{last}][{3 + j}:v]overlay=x='{ex}':y='{ey}':enable='between(t,{slots[j][0]:.2f},{slots[j][1]:.2f})'[v{j + 1}]"
-            last = f"v{j + 1}"; extra += ["-loop", "1", "-framerate", "25", "-t", f"{D:.2f}", "-i", png]
-            credits.append(f"{scs[idx]['title']}: {photos[j]['caption']} - {photos[j]['credit']} {photos[j]['page']}".strip())
+            png = f"{V}_p{k}_{j}.png"
+            make_card(photos[j], png)
+
+            direction = directions[j % len(directions)]
+
+            ex, ey = slide_expr(
+                PHOTO_X - 20,
+                PHOTO_Y - 20,
+                slots[j][0],
+                slots[j][1],
+                direction
+            )
+
+            fc += (
+                f";[{last}][{3 + j}:v]"
+                f"overlay=x='{ex}':y='{ey}':"
+                f"enable='between(t,{slots[j][0]:.2f},{slots[j][1]:.2f})'"
+                f"[v{j + 1}]"
+            )
+
+            last = f"v{j + 1}"
+            extra += [
+                "-loop", "1",
+                "-framerate", "25",
+                "-t", f"{D:.2f}",
+                "-i", png
+            ]
+
+            credits.append(
+                f"{scs[idx]['title']}: {photos[j]['caption']} - "
+                f"{photos[j]['credit']} {photos[j]['page']}".strip()
+            )
         run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-framerate", "25", "-t", f"{D:.2f}", "-i", f"{V}_m{k}.png",
              "-loop", "1", "-framerate", "25", "-t", f"{D:.2f}", "-i", f"{V}_o{k}.png", "-i", a, *extra, "-filter_complex", fc,
              "-map", f"[{last}]", "-map", "2:a", "-af", f"apad=whole_dur={D:.2f}", "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p",
