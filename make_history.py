@@ -4,7 +4,7 @@ Tigrinya has no free voice: put your own recordings in audio_ti/01.mp3 ... (scen
 become silent captioned scenes over quiet music."""
 import asyncio, glob, json, math, os, re, subprocess, sys, textwrap
 from PIL import Image, ImageDraw, ImageFilter
-import lang, mapkit, histmap, music, scenes, commons_tools
+import lang, mapkit, histmap, music, scenes, commons_tools, random
 
 V = sys.argv[1] if len(sys.argv) > 1 else "en"
 W, H = 1280, 720
@@ -212,10 +212,33 @@ def make_card(p, out_png):
     card.save(out_png)
     return card.size
 
+
 def slide_expr(x0, y0, tin, tout, direction):
-    pin = f"clip((t-{tin:.2f})/{SLIDE_IN},0,1)"; pout = f"clip((t-({tout:.2f}-{SLIDE_OUT}))/{SLIDE_OUT},0,1)"
-    f = f"((1-{pin}*{pin}*(3-2*{pin}))+{pout}*{pout}*(3-2*{pout}))"          # 1 = off screen, 0 = in place (smooth ease)
-    return (f"{x0}+(W-{x0})*{f}", str(y0)) if direction == "right" else (str(x0), f"{y0}+(H-{y0})*{f}")
+    pin = f"clip((t-{tin:.2f})/{SLIDE_IN},0,1)"
+    pout = f"clip((t-({tout:.2f}-{SLIDE_OUT}))/{SLIDE_OUT},0,1)"
+
+    # 1 = off-screen; 0 = in position
+    f = (
+        f"((1-{pin}*{pin}*(3-2*{pin}))"
+        f"+{pout}*{pout}*(3-2*{pout}))"
+    )
+
+    if direction == "left":
+        x = f"{x0}-(w+{x0})*{f}"
+        y = str(y0)
+    elif direction == "right":
+        x = f"{x0}+(W-{x0})*{f}"
+        y = str(y0)
+    elif direction == "top":
+        x = str(x0)
+        y = f"{y0}-(h+{y0})*{f}"
+    elif direction == "bottom":
+        x = str(x0)
+        y = f"{y0}+(H-{y0})*{f}"
+    else:
+        x, y = str(x0), str(y0)
+
+    return x, y
 
 def photo_plan(n, D):
     """Start/end time for each of n photos in a scene of D seconds."""
@@ -272,12 +295,28 @@ if __name__ == "__main__":
         xs, xe, ys, ye = (0, 128, 0, 72) if k % 2 == 0 else (128, 0, 72, 0)
         photos = resolve_photos(pcfg, scs[idx]["title"], idx) if role == "scene" else []
         n_ph, slots = photo_plan(len(photos), D) if photos else (0, [])
+        directions = ["left", "right", "top", "bottom"]
+        random.shuffle(directions)
         fc = f"[0:v]crop=2432:1368:x='{xs}+({xe - xs})*t/{D:.3f}':y='{ys}+({ye - ys})*t/{D:.3f}',scale={W}:{H}:flags=bicubic[bg];[bg][1:v]overlay=0:0[v0]"
         extra, last = [], "v0"
         for j in range(n_ph):
             png = f"{V}_p{k}_{j}.png"; make_card(photos[j], png)
-            direction = ("right" if (k + j) % 2 == 0 else "bottom") if pcfg.get("slide", "alternate") == "alternate" else pcfg.get("slide", "right")
-            ex, ey = slide_expr(PHOTO_X - 20, PHOTO_Y - 20, slots[j][0], slots[j][1], direction)
+            
+    directions = ["left", "right", "top", "bottom"]
+    
+    # Shuffle the directions for each scene
+    if j == 0:
+        random.shuffle(directions)
+    
+    direction = directions[j % len(directions)]
+    
+    ex, ey = slide_expr(
+        PHOTO_X - 20,
+        PHOTO_Y - 20,
+        slots[j][0],
+        slots[j][1],
+        direction
+    )
             fc += f";[{last}][{3 + j}:v]overlay=x='{ex}':y='{ey}':enable='between(t,{slots[j][0]:.2f},{slots[j][1]:.2f})'[v{j + 1}]"
             last = f"v{j + 1}"; extra += ["-loop", "1", "-framerate", "25", "-t", f"{D:.2f}", "-i", png]
             credits.append(f"{scs[idx]['title']}: {photos[j]['caption']} - {photos[j]['credit']} {photos[j]['page']}".strip())
