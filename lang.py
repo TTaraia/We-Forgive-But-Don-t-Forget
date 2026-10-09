@@ -145,8 +145,8 @@ _SRC = ("Sources:\n"
 HIST["en"].update({
  "title": ["We Forgive but don't forget!", "Remembering the Eritrean War Years"], "intro_sub": "1961 - 1991",
  "intro_spoken": "We Forgive but don't forget! Remembering the Eritrean war years, 1961 to 1991. A careful account for young viewers, based on human rights reports and historical research.",
- "outro_title": "Thank you for watching", "outro_sub": "Sources: Human Rights Watch, Africa Watch and historical research",
- "outro_spoken": "Thank you for watching. The sources are listed in the description. Figures are estimates, and sources sometimes disagree.",
+ "outro_title": "Thank You For Watching", "outro_sub": "Sources: Human Rights Watch, Africa Watch and historical research",
+ "outro_spoken": "Thank You For Watching. The sources are listed in the description. Figures are estimates, and sources sometimes disagree.",
  "video_title": "We Forgive but don't forget! Remembering the Eritrean War Years, 1961-1991 (for young viewers)",
  "desc": "A careful, non-graphic account of major attacks on civilians by the Ethiopian military during Eritrea's war of independence, from 1 September 1961 to 24 May 1991, for young people who did not live through it. Figures are estimates and sources sometimes disagree; each scene says where the numbers come from.",
  "sources": _SRC,
