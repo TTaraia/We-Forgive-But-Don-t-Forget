@@ -135,7 +135,7 @@ HIST["ti"].update({
  "disclosure": "ምልክታ፦ ካርታታት ዘመናዊ ዶባት ንምርኣይ ጥራይ የርእዩ። ትሕተ-ጽሑፋት ብእንግሊዝኛ፣ ኣምሓርኛን ትግርኛን ይርከቡ።",
  "chapters": "ምዕራፋት", "chapter_intro": "መእተዊ", "chapter_outro": "ምንጭታትን የቐንየልናን"})
 
-# ---------- PROJECT: We Forgive but don't forget! Remembering the Eritrean War Years (English first; am/ti still need translating) ----------
+# ---------- PROJECT: We Forgive But Don't Forget! Remembering The Eritrean War Years (English first; am/ti still need translating) ----------
 _SRC = ("Sources:\n"
         "- Human Rights Watch / Africa Watch, Evil Days: 30 Years of War and Famine in Ethiopia (1991), ch. 2 'Scorched Earth in Eritrea, 1961-77': https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/c2eritre.pdf\n"
         "- Same book, ch. 14 'The Road to Asmara: Eritrea, 1988-91': https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/d4afabet.pdf\n"
