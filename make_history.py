@@ -189,8 +189,16 @@ def resolve_photos(cfg, title, idx):
 def make_card(p, out_png):
     """A framed photo card (white border, soft shadow, caption and credit) as a transparent PNG."""
     im = Image.open(p["path"]).convert("RGB"); bw, bh = PHOTO_W, PHOTO_H
-    s = max(bw / im.width, bh / im.height); im = im.resize((int(im.width * s) + 1, int(im.height * s) + 1))
-    l, t = (im.width - bw) // 2, (im.height - bh) // 2; im = im.crop((l, t, l + bw, t + bh))
+    
+    s = min(bw / im.width, bh / im.height)
+    im = im.resize((int(im.width * s), int(im.height * s)), Image.Resampling.LANCZOS)
+
+    # Center the complete image inside the photo area
+    fitted = Image.new("RGB", (bw, bh), (245, 240, 225))
+    x = (bw - im.width) // 2
+    y = (bh - im.height) // 2
+    fitted.paste(im, (x, y))
+    im = fitted
     cap = lang.wrap(p["caption"], 20, bw, 2) if p["caption"] else []
     cred = lang.wrap(p["credit"], 14, bw, 2) if p["credit"] else []
     th = 12 + bh + 10 + 26 * len(cap) + 20 * len(cred) + 14; tw = bw + 24
