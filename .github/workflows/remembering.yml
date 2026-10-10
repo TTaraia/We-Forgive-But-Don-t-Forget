@@ -1,4 +1,4 @@
-name: Build the war-years atrocities video
+name: Build the war-years videos (English, Amharic, Tigrinya)
 on:
   workflow_dispatch:
 jobs:
@@ -13,10 +13,15 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
-      - run: python make_history.py en
+      - name: English
+        run: python make_history.py en
+      - name: Amharic (skipped if scenes_am.txt is missing)
+        run: python make_history.py am
+      - name: Tigrinya (skipped if scenes_ti.txt is missing)
+        run: python make_history.py ti
       - uses: actions/upload-artifact@v5
         with:
-          name: remembering-video
+          name: remembering-videos
           path: |
             remembering_*.mp4
             remembering_*.srt
