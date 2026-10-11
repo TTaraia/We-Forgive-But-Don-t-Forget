@@ -4,7 +4,7 @@
   "_help": "Each scene title below must match scenes_en.txt exactly. Every scene holds a LIST [ ... ] of pictures. 'file' is the picture in the top folder (or photos/). Put one credit line in default_credit, or add a 'credit' to a single picture. Calm pictures of places only: no victims, no graphic scenes.",
   "scenes": {
     "Barka Burns": [
-      {"file": "tessenei.png", "caption": "Tessenei: 21 prisoners executed here, 12 February 1967"}
+      {"file": "tesenei.png", "caption": "Tessenei: 21 prisoners executed here, 12 February 1967"}
     ],
     "More Villages Destroyed": [
       {"file": "eilet.png", "caption": "Eilet: village burned, July 1967"},
