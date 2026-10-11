@@ -5,6 +5,7 @@ become silent captioned scenes over quiet music."""
 import asyncio, glob, json, math, os, re, subprocess, sys, textwrap
 from PIL import Image, ImageDraw, ImageFilter
 import lang, mapkit, histmap, music, scenes, commons_tools, random
+from tts_tigrinya import synthesize_tigrinya
 
 V = sys.argv[1] if len(sys.argv) > 1 else "en"
 W, H = 1280, 720
@@ -297,8 +298,18 @@ if __name__ == "__main__":
             text = h["intro_spoken"] if role == "intro" else (h["outro_spoken"] if role == "outro" else scs[idx]["spoken"])
             rec = own_recording(idx + 1) if role == "scene" else None
             if rec: run(["ffmpeg", "-y", "-loglevel", "error", "-i", rec, "-ar", "44100", "-ac", "2", out.replace(".mp3", ".m4a")]); out = out.replace(".mp3", ".m4a")
-            elif male is None: silent_scene(out.replace(".mp3", ".m4a"), estimate_seconds(text)); out = out.replace(".mp3", ".m4a")
-            else: timings[k] = tts(text, out, female if (role == "scene" and idx % 2 == 0) else male)
+            
+            elif V == "ti":
+                synthesize_tigrinya(text, out)
+                timings[k] = None
+            elif male is None:
+                silent_scene(out.replace(".mp3", ".m4a"), estimate_seconds(text))
+                out = out.replace(".mp3", ".m4a")
+            else:
+                timings[k] = tts(
+                    text, out,
+                    female if (role == "scene" and idx % 2 == 0) else male
+                )
         audio.append(out)
     adur = [dur(a) for a in audio]
     durs = [max(ad + (0.8 if it[0] == "voice" else 0), MIN_SCENE if it[1] == "scene" else 0) for ad, it in zip(adur, items)]
