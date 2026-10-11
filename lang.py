@@ -33,6 +33,12 @@ NAMES = {
 _fonts, _D = {}, ImageDraw.Draw(Image.new("L", (1, 1)))
 EFONT = "https://raw.githubusercontent.com/notofonts/notofonts.github.io/main/fonts/NotoSansEthiopic/hinted/ttf/NotoSansEthiopic-Bold.ttf"
 
+TTS_ENGINE = {
+    "en": "edge",
+    "am": "edge",
+    "ti": "mms",
+}
+
 def _path(cls):
     if cls == "L":
         p = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"; return p if os.path.exists(p) else None
