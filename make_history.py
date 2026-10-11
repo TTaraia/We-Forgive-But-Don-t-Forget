@@ -158,20 +158,26 @@ def overlay(kind, sc, path, n, total, spec):
 PHOTO_X, PHOTO_Y, PHOTO_W, PHOTO_H = 760, 98, 440, 290      # the picture area of a card (pixels in the 1280x720 frame)
 SLIDE_IN, SLIDE_OUT, MIN_SLOT = 0.9, 0.7, 3.5
 
-def photo_config(lang="en"):
+def photo_config(language="en"):
     config_files = {
         "en": "images.json",
         "am": "images_am.json",
         "ti": "images_ti.json",
     }
 
-    filename = config_files.get(lang, "images.json")
+    if language not in config_files:
+        raise ValueError(
+            f"Unsupported language: {language!r}. Use en, am, or ti."
+        )
 
-    return (
-        json.load(open(filename, encoding="utf-8"))
-        if os.path.exists(filename)
-        else {}
-    )
+    filename = config_files[language]
+
+    if not os.path.exists(filename):
+        print(f"Warning: {filename} not found; no photos loaded.")
+        return {}
+
+    with open(filename, encoding="utf-8") as f:
+        return json.load(f)
 
 def resolve_photos(cfg, title, idx):
     """Returns [{path, caption, credit, page}] for a scene. Commons photos are licence-checked and skipped if not reusable.
@@ -296,7 +302,7 @@ if __name__ == "__main__":
         audio.append(out)
     adur = [dur(a) for a in audio]
     durs = [max(ad + (0.8 if it[0] == "voice" else 0), MIN_SCENE if it[1] == "scene" else 0) for ad, it in zip(adur, items)]
-    total = len(scs); parts, starts, cum = [], [], 0.0; pcfg = photo_config(lang); credits = []
+    total = len(scs); parts, starts, cum = [], [], 0.0; pcfg = photo_config(V); credits = []
     try:
         import check_images; check_images.check(quiet=False)
     except Exception as ex: print("image check skipped:", ex)
