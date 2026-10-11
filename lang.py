@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 LANGS = {"en": "English", "am": "Amharic", "ti": "Tigrinya"}
 VOICES = {"en": (os.environ.get("VOICE_MALE", "en-US-AndrewNeural"), os.environ.get("VOICE_FEMALE", "en-US-JennyNeural")),
-          "am": ("am-ET-AmehaNeural", "am-ET-MekdesNeural"), "am": ("am-ET-AmehaNeural", "am-ET-MekdesNeural")}   # Tigrinya has no free voice
+          "am": ("am-ET-AmehaNeural", "am-ET-MekdesNeural"), "ti": ("am-ET-AmehaNeural", "am-ET-MekdesNeural")}   # Tigrinya has no free voice
 STR = {
  "en": {"title": ["Eritrea In The Eyes", "Of The World Today"], "outro": ["Allegations are claims,", "not independently verified"],
         "outro_sub": "Sources are in the description", "source": "Source:", "map": "Map:", "story": "Story {n} of {t}",
