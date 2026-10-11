@@ -4,139 +4,140 @@
   "_help": "Each scene title below must match scenes_en.txt exactly. Every scene holds a LIST [ ... ] of pictures. 'file' is the picture in the top folder (or photos/). Put one credit line in default_credit, or add a 'credit' to a single picture. Calm pictures of places only: no victims, no graphic scenes.",
   "scenes": {
     "ባርካ ቃጠሎዎች": [
-      {"file": "tessenei.png", "caption": "ተሰነይ፡ 21 እስረኞች እዚህ የተገደሉበት ቦታ፣ 12 የካቲት 1967"}
+      {"file": "tesenei.png", "caption": "ተሰነይ፡ 21 እስረኞች እዚህ የተገደሉበት ቦታ፣ 12 የካቲት 1967"}
     ],
     "ተጨማሪ መንደሮች ወድመዋል": [
       {"file": "eilet.png", "caption": "አይሌት፡ መንደሩ የተቃጠለበት፣ ሐምሌ 1967"},
       {"file": "gumhot.png", "caption": "ጉምሆት፡ መንደሩ ተቃጠለ፣ ሐምሌ 1967"},
       {"file": "keren.png", "caption": "ከረን እና የሰንሂት መንደሮች፣ ህዳር 1967"}
     ],
-    "A Mosque Near Keren": [
-      {"file": "besikdira.png", "caption": "Besikdira, near Keren: killings on 30 November 1970"}
+    "ከከረን አቅራቢያ የሚገኝ መስጊድ": [
+      {"file": "besikdira.png", "caption": "ቤሲክዲራ፣ ከከረን አቅራቢያ፡ ህዳር 30 ቀን 1970 የተፈጸመ ግድያ"}
     ],
-    "Ona": [
-      {"file": "ona.png", "caption": "Ona, on the edge of Keren: attack of 1 December 1970"}
+    "ኦና": [
+      {"file": "ona.png", "caption": "ኦና፣ የከረን ዳርቻ፡ ታህሳስ 1 ቀን 1970 የተፈጸመ ጥቃት"}
     ],
-    "State Of Emergency": [
-      {"file": "elabored.png", "caption": "Elabored: about 60 civilians killed in a mosque, 27 January 1971"}
+    "የአስቸኳይ ጊዜ አዋጅ": [
+      {"file": "elabored.png", "caption": "ኤላበርድ፡ ጥር 27 ቀን 1971 በመስጊድ ውስጥ ወደ 60 የሚጠጉ ሲቪሎች ተገደሉ"}
     ],
-    "Om Hajer": [
-      {"file": "omhajer.png", "caption": "Om Hajer, near the Sudan border: July 1974"}
+    "ኦም ሀጀር": [
+      {"file": "omhajer.png", "caption": "ኦም ሀጀር፣ ከሱዳን ድንበር አቅራቢያ፡ ሐምሌ 1974"}
     ],
-    "Asmara": [
-      {"file": "wokiduba.png", "caption": "A village outside Asmara where civilians were killed in 1975"},
-      {"file": "asmara.png", "caption": "Asmara, February 1975"},
-      {"file": "maryam_gimbi.png", "caption": "Documented site of detainee abuse and killings during the war."}
+    "አስመራ": [
+      {"file": "wokiduba.png", "caption": "እ.ኤ.አ. በ1975 ሲቪሎች የተገደሉበት ከአስመራ ውጭ የሚገኝ መንደር"},
+      {"file": "asmara.png", "caption": "አስመራ፣ የካቲት 1975"},
+      {"file": "maryam_gimbi.png", "caption": "በጦርነቱ ወቅት እስረኞች የተንገላቱበትና የተገደሉበት እንደሆነ የተመዘገበ ቦታ።"}
     ],
-    "A Year Of Destruction": [
-      {"file": "agordat.png", "caption": "Agordat: massacre reported on 9 March 1975 (Eritrean sources)"},
-      {"file": "hirgigo.png", "caption": "Hirgigo: massacre reported on 17 April 1975 (Eritrean sources)"}
+    "የጥፋት ዓመት": [
+      {"file": "agordat.png", "caption": "አጎርዳት፡ መጋቢት 9 ቀን 1975 የተፈጸመ እልቂት (የኤርትራ ምንጮች)"},
+      {"file": "hirgigo.png", "caption": "ሂርጊጎ፡ ሚያዝያ 17 ቀን 1975 የተፈጸመ እልቂት (የኤርትራ ምንጮች)"}
     ],
-    "Counting The Cost": [
-      {"file": "imberemi.png", "caption": "Imberemi, Red Sea coast: civilians killed by a naval unit, March 1977"}
+    "የጦርነቱ ዋጋ": [
+      {"file": "imberemi.png", "caption": "ኢምቤሬሚ፣ የቀይ ባህር ጠረፍ፡ በመርከብ ጦር ክፍል የተገደሉ ሲቪሎች፣ መጋቢት 1977"}
     ],
-    "The Air War": [
-      {"file": "nakfa.png", "caption": "Nakfa: destroyed by ten years of air raids"}
+    "የአየር ጦርነት": [
+      {"file": "nakfa.png", "caption": "ናቅፋ፡ በአስር ዓመታት የአየር ላይ ጥቃቶች የወደመች"}
     ],
-    "She'eb": [
-      {"file": "she'eb_.png", "caption": "She'eb, located in Northern Red Sea region: 12 May 1988"}
+    "ሸዕብ": [
+      {"file": "she'eb_.png", "caption": "ሸዕብ፣ በሰሜናዊ ቀይ ባህር ክልል የሚገኝ፡ 12 ግንቦት 1988"}
     ],
-    "Afabet": [
-      {"file": "afabet.png", "caption": "Afabet: air raids of 3 and 4 April 1990"}
+    "አፋበት": [
+      {"file": "afabet.png", "caption": "አፋበት፡ የ3 እና 4 ሚያዝያ 1990 የአየር ላይ ጥቃቶች"}
     ],
-    "Massawa Under The Bombs": [
-      {"file": "massawa.png", "caption": "Massawa: bombed from the air, February to June 1990"},
-      {"file": "Imperial_Palace_28852906125229.jpg", "caption": "The Imperial Palace at Massawa, Eritrea, erected by an Egyptian governor in 1872, was heavily damaged during the struggle for independence. Haile Selassie once used it as his winter residence, 1990"}
+    "ማሳዋ በቦምብ ጥቃት ስር": [
+      {"file": "massawa.png", "caption": "ማሳዋ፡ ከአየር ላይ በቦምብ የተደበደበችበት ወቅት፣ ከየካቲት እስከ ሰኔ 1990"},
+      {"file": "ImperialPalaceMassawa.jpg", "caption": "በማሳዋ፣ ኤርትራ የሚገኘውና በ1872 በግብፃዊ አስተዳዳሪ የተገነባው የንጉሠ ነገሥቱ ቤተ መንግሥት፣ ለነፃነት በሚደረገው ትግል ወቅት ከፍተኛ ጉዳት ደርሶበት ነበር። ኃይለ ሥላሴ በአንድ ወቅት ለክረምት መኖሪያነት ይጠቀሙበት ነበር፣ 1990"}
     ],
-    "Massawa: The Damage": [
+    "ማሳዋ፡ የደረሰው ጉዳት": [
       {
         "file": "ImperialPalaceMassawa.jpg", 
-        "caption": "Massawa after the 1990 air raids",
-        "credit": "Photo: Wikimedia Commons" 
+        "caption": "ከ1990ቱ የአየር ላይ ጥቃቶች በኋላ ማሳዋ",
+        "credit": "ፎቶ፡ Wikimedia Commons" 
       }
     ],
-    "Asmara Under Siege": [
-      {"file": "asmaraundersiege.png", "caption": "After Massawa fell, the Ethiopian colonial army was confined to Asmara and its surroundings until May 24, 1991"}
+    "አስመራበባለበባብ ስር": [
+      {"file": "asmaraundersiege.png", "caption": "ማሳዋ ከተያዘች በኋላ፣ የኢትዮጵያ ቅኝ ገዢ ጦር እስከ ግንቦት 24 ቀን 1991 ድረስ በአስመራ እና በአካባቢዋ ብቻ ተወስኖ ነበር"}
     ],
-    "24 May 1991": [
-      {"file": "asmara.png", "caption": "Asmara, 24 May 1991"}
+    "24 ግንቦት 1991": [
+      {"file": "asmara.png", "caption": "አስመራ፣ 24 ግንቦት"}
+    ] 1991"}
     ],
-    "Asmara Tank Graveyard(Asmara Tank Cemetery)": [
+    "የአስመራ የታንክ መቃብር ስፍራ": [
       {
         "file": "tank-graveyard-in-asmara-eritrea.png", 
         "caption": "1961 - 1991",
-        "credit": "Photo: DavePrimov / 123RF"      
+        "credit": "ፎቶ፡ DavePrimov / 123RF"      
       }
     ],
-    "Remembering Eritrean Victims Of Colonial Ethiopian Aggressors": [
+    "በቅኝ ገዢው የኢትዮጵያ ወራሪ ኃይል የተጎዱ ኤርትራውያንን ማስታወስ": [
       {"file": "remembering_victims.png", "caption": "1961 - 1991"}
     ],
-    "The Most Significant Dates": [
-      {"file": "MostImportantDates.png", "caption": "Eritrea: The most significant dates during and immediately following the Ethiopian occupation of Eritrea"}
+    "በጣም ወሳኝ ቀናት": [
+      {"file": "MostImportantDates.png", "caption": "ኤርትራ፡ በኢትዮጵያ የኤርትራ ወረራ ወቅት እና ወዲያውኑ ተከትሎ የነበሩ ወሳኝ ቀናት"}
     ],
-    "The Federation Era": [
-      {"file": "federationEra.png", "caption": "Federation: The Federation Era: 1952 - 1962"}
+    "የፌዴሬሽን ዘመን": [
+      {"file": "federationEra.png", "caption": "ፌዴሬሽን፡ የፌዴሬሽን ዘመን፡ 1952 - 1962"}
     ],
-    "The Federation Begins": [
-      {"file": "FederationBegins.png", "caption": "Federation: Following UN Resolution 390(A), Eritrea is officially federated with the Ethiopian Empire as an autonomous unit with its own parliament, constitution, and flag."}
+    "የፌዴሬሽን መጀመር": [
+      {"file": "FederationBegins.png", "caption": "ፌዴሬሽን፡ የተባበሩት መንግስታት ውሳኔ ቁጥር 390(A)ን ተከትሎ፣ ኤርትራ የራሷ ፓርላማ፣ ህገ-መንግስት እና ባንዲራ ያላት ራሷን የምታስተዳድር አካል ሆና ከኢትዮጵያ ንጉሠ ነገሥት መንግሥት ጋር በፌዴሬሽን ተዋሃደች።"}
     ],
-    "Language Suppression": [
-      {"file": "language_suppression.png", "caption": "Language Suppression: Emperor Haile Selassie bans the teaching and official use of native Eritrean languages (Tigrinya and Arabic), forcing Amharic as the sole official language."}
+    "ቋንቋን ማፈን": [
+      {"file": "language_suppression.png", "caption": "ቋንቋን ማፈን፡ ንጉሠ ነገሥት ኃይለ ሥላሴ የኤርትራ ተወላጅ ቋንቋዎች (ትግርኛ እና አረብኛ) እንዳይማሩ እና በይፋ እንዳይጠቀሙ ከለከሉ፤ አማርኛን ብቻ ብቸኛ ኦፊሴላዊ ቋንቋ እንዲሆን አስገደዱ።"}
     ],
-    "The Flag Lowered": [
-      {"file": "flag_lowered.png", "caption": "Eritrean Flag: The Ethiopian government officially lowers the Eritrean flag and replaces it with the Ethiopian imperial flag."}
+    "ባንዲራው መውረዱ": [
+      {"file": "flag_lowered.png", "caption": "የኤርትራ ባንዲራ፡ የኢትዮጵያ መንግስት የኤርትራን ባንዲራ በይፋ አወረደ፤ በምትኩም የኢትዮጵያን ንጉሠ ነገሥት መንግሥት ባንዲራ አቆመ።"}
     ],
-    "The Eritrean Liberation Movement(ELM) Is Founded": [
-      {"file": "elm_began.png", "caption": "Eritrean Liberation Movement: The underground Eritrean Liberation Movement (ELM) is formed in Sudan to organize secret political resistance against Ethiopian encroachment."}
+    "የኤርትራ ነፃነት ንቅናቄ (ELM) መመስረት": [
+      {"file": "elm_began.png", "caption": "የኤርትራ ነፃነት ንቅናቄ፡ በኢትዮጵያ ወረራ ላይ ሚስጥራዊ የፖለቲካ ተቃውሞ ለማደራጀት፣ በሱዳን ውስጥ ሚስጥራዊው የኤርትራ ነፃነት ንቅናቄ (ELM) ተመሰረተ።"}
     ],
-    "The Eritrean Liberation Front(ELF) Is Founded": [
-      {"file": "ElfFounded.png", "caption": "The Eritrean Liberation Front: ELF is established in Cairo, shifting the independence movement toward an armed struggle strategy."}
+    "የኤርትራ ነፃነት ግንባር (ELF) መመስረት": [
+      {"file": "ElfFounded.png", "caption": "የኤርትራ ነፃነት ግንባር፡ የኤርትራ ነፃነት ግንባር (ELF) በካይሮ ተመሰረተ፤ ይህም የነፃነት ትግሉን ወደ የታጠቀ ትግል ስትራቴጂ እንዲሸጋገር አደረገው።"}
     ],
-    "The Armed Struggle Begins": [
+    "የታጠቀው ትግል መጀመር": [
       {
-        "file": "hamididrisawate.png, armedstrugglebegins", 
-        "caption": "The Armed Struggle Begins: Hamid Idris Awate fires the first shots against Ethiopian forces at Mount Adal, officially starting the 30-year Eritrean War of Independence.",
-        "credit": "Photo: shabait.com"
+        "file": "hamididrisawate.png፣ የታጠቁት ትግል መጀመር", 
+        "caption": "የታጠቁት ትግል መጀመር፡ ሃሚድ ኢድሪስ አዋቴ በአዳል ተራራ ላይ በኢትዮጵያ ኃይሎች ላይ የመጀመሪያዎቹን ጥይቶች በመተኮስ፣ የ30 ዓመቱን የኤርትራ የነጻነት ጦርነት በይፋ አስጀመሩ።",
+        "credit": "ፎቶ፡ shabait.com"
       }
     ],
-    "Annexation And The First Phase Of War": [
-      {"file": "annexation_war.png", "caption": "Annexation and War: Annexation and the First Phase of War)"}
+    "አካለላዊ ውህደት እና የመጀመሪያው የጦርነት ምዕራፍ"፦ [
+      {"file": "annexation_war.png", "caption": "አካለላዊ ውህደት እና ጦርነት፡ አካለላዊ ውህደት እና የመጀመሪያው የጦርነት ምዕራፍ"}
     ],
-    "The Federation Is Dissolved": [
-      {"file": "federation_dissolved.png", "caption": "Federation is Dissolved: Under heavy military pressure from Haile-Selassie, the Eritrean parliament is forced to dissolve itself, and Eritrea is officially annexed as Ethiopia’s 14th province."}
+    "ፌዴሬሽኑ መፍረስ"፦ [
+      {"file": "federation_dissolved.png", "caption": "ፌዴሬሽኑ መፍረስ፡ በኃይለ ሥላሴ በኩል በተደረገ ከፍተኛ ወታደራዊ ጫና ምክንያት የኤርትራ ፓርላማ ራሱን እንዲፈርስ የተገደደ ሲሆን፣ ኤርትራም በይፋ የኢትዮጵያ 14ኛ ክፍለ ሀገር ሆና ተካተተች።"}
     ],
-    "The Eritrean People's Liberation Front(EPLF) Splinter": [
-      {"file": "elf_splinter.png", "caption": "The EPLF Splinter: Internal ideological rifts within the ELF lead to the creation of the Eritrean People's Liberation Front (EPLF), which eventually becomes the dominant rebel group."}
+    "የኤርትራ ሕዝባዊ ነፃ አውጪ ግንባር (EPLF) መፈጠር"፦ [
+      {"file": "elf_splinter.png", "caption": "የEPLF መፈጠር፡ በELF (የኤርትራ ነፃነት ግንባር) ውስጥ በተፈጠሩ የውስጥ የርዕዮተ ዓለም ልዩነቶች ምክንያት የኤርትራ ሕዝባዊ ነፃ አውጪ ግንባር (EPLF) የተመሰረተ ሲሆን፣ ይህ ቡድን በኋላ ላይ ዋነኛው አማፂ ኃይል ለመሆን በቅቷል።"}
     ],
-    "The Derg Regime And The Escalation": [
-      {"file": "derg_regime.png", "caption": "The Derg Regime Escalation"}
+    "የደርግ አገዛዝ እና የጦርነቱ መባባስ"፦ [
+      {"file": "derg_regime.png", "caption": "የደርግ አገዛዝ እና የጦርነቱ መባባስ"}
     ],
-    "The Fall of Haile-Selassie": [
-      {"file": "fall_HaileSelasie.png", "caption": "The Fall of Haile Selassie: The Ethiopian Emperor is overthrown in a military coup by a brutal communist junta known as the Derg, led eventually by Mengistu Haile-Mariam, who severely escalates the war in Eritrea."}
+    "የኃይለ ሥላሴ ውድቀት"፦ [
+      {"file": "fall_HaileSelasie.png", "caption": "የኃይለ ሥላሴ ውድቀት፡ የኢትዮጵያ ንጉሠ ነገሥት በደርግ በሚታወቀው ጨካኝ የኮሚኒስት ወታደራዊ ቡድን በተደረገ መፈንቅለ መንግሥት ከሥልጣን ተወገዱ፤ ይህ ቡድን በኋላ ላይ በመንግሥቱ ኃይለ ማርያም የተመራ ሲሆን፣ እርሱም በኤርትራ የነበረውን ጦርነት በከፍተኛ ሁኔታ አባብሶታል።"}
     ],
-    "The First Strategic Withdrawal": [
-      {"file": "strategic_withdrawal.png", "caption": "Strategic Withdrawal: After capturing nearly all of Eritrea, the EPLF is forced into a tactical retreat to the northern mountains of Nakfa due to massive Soviet military intervention backing the Ethiopian army."}
+    "የመጀመሪያው ስልታዊ ማፈግፈግ"፦ [
+      {"file": "strategic_withdrawal.png", "caption": "ስልታዊ ማፈግፈግ፡ EPLF አብዛኛውን የኤርትራ ግዛት ከተቆጣጠረ በኋላ፣ የኢትዮጵያን ጦር በሚደግፍ ከፍተኛ የሶቪየት ወታደራዊ ጣልቃ ገብነት ምክንያት ወደ ናቅፋ ሰሜናዊ ተራሮች ስልታዊ ማፈግፈግ ለማድረግ ተገደደ።"}
       ],
-    "The Red Star Offensive": [
-      {"file": "redstar_offensive.png", "caption": "The Red Star Offensive: The Derg launches its largest military campaign to crush the EPLF at Nakfa but fails completely despite devastating casualties."}
+    "የቀይ ኮከብ ዘመቻ"፦ [
+      {"file": "redstar_offensive.png", "caption": "የቀይ ኮከብ ዘመቻ፡ ደርግ በናቅፋ የሚገኘውን EPLF ለመደምሰስ ትልቁን ወታደራዊ ዘመቻ የጀመረ ቢሆንም፣ ከፍተኛ የሰው ኃይል እና የንብረት ውድመት ቢደርስበትም ዘመቻው ሙሉ በሙሉ ሳይሳካ ቀረ።"}
     ],
-    "The Road To Liberation": [
-      {"file": "road_to_liberation.png", "caption": "The Road to Liberation 1988–1993"}
+    "ወደ ነፃነት የሚወስደው መንገድ"፦ [
+      {"file": "road_to_liberation.png", "caption": "ወደ ነፃነት የሚወስደው መንገድ 1988–1993"}
     ],
-    "The Battle Of Afabet": [
-      {"file": "BattleOfAfabet.png", "caption": "The EPLF destroys the Ethiopian army's commands at Afabet, a decisive turning point that British historian Basil Davidson called the most significant victory in Africa since Dien Bien Phu."}
+    "የአፋበት ጦርነት": [
+      {"file": "BattleOfAfabet.png", "caption": "የኤርትራ ህዝባዊ ነጻ አውጪ ግንባር (EPLF) በአፋበት የኢትዮጵያን ጦር የአመራር ማዕከላት አወደመ፤ ይህ ድል ብሪታኒያዊው ታሪክ ጸሐፊ ባሲል ዴቪድሰን ከዲየን ቢየን ፉ (Dien Bien Phu) ወዲህ በአፍሪካ እጅግ ወሳኝ ድል ብለው የገለጹት ወሳኝ የመዞሪያ ነጥብ ነበር።"}
     ],
-    "Operation Fenkil": [
-      {"file": "OperationFenkil.png", "caption": "The EPLF launches a massive surprise amphibious and land assault to liberate the strategic port city of Massawa, cutting off the primary supply route for Ethiopian troops in Asmara."}
+    "የፌንኪል ዘመቻ": [
+      {"file": "OperationFenkil.png", "caption": "EPLF ስትራቴጂያዊቷን የወደብ ከተማ ምጽዋን ነጻ ለማውጣት በባህር እና በየብስ የተደራጀ ግዙፍ ድንገተኛ ጥቃት የከፈተ ሲሆን፣ በዚህም በአስመራ ለሚገኙት የኢትዮጵያ ጦር ክፍሎች የሚደረገውን ዋና የአቅርቦት መስመር ቆረጠ።"}
     ],
-    "The Fall Of Asmara": [
-      {"file": "May24.png", "caption": "EPLF forces enter the capital city of Asmara, completely defeating the remaining Ethiopian garrison and ending 39 years of Ethiopian rule."}
+    "የአስመራ መውደቅ": [
+      {"file": "May24.png", "caption": "የEPLF ኃይሎች ወደ ዋና ከተማዋ አስመራ በመግባት፣ በከተማዋ የነበረውን የመጨረሻ የኢትዮጵያ ጦር ኃይል ሙሉ በሙሉ ድል አደረጉ፤ እንዲሁም የ39 ዓመታት የኢትዮጵያ አስተዳደርን አበቁ።"}
       ],
-    "The Independence Referendum": [
-      {"file": "Referendum.png", "caption": "A UN-monitored referendum is held where 99.8% of Eritreans vote in favor of sovereignty."}
+    "የነጻነት ህዝበ-ውሳኔ": [
+      {"file": "Referendum.png", "caption": "በተባበሩት መንግስታት ድርጅት ቁጥጥር ስር የተካሄደ ህዝበ-ውሳኔ የተደረገ ሲሆን፣ በዚህም 99.8% የሚሆኑት ኤርትራውያን ለሉዓላዊነት ድምፃቸውን ሰጥተዋል።"}
     ],
-    "Official Independence": [
-      {"file": "OfficialIndependence.png", "caption": "Eritrea officially declares its sovereign independence and joins the United Nations, exactly two years after de facto liberation."}
+    "ይፋዊ ነጻነት": [
+      {"file": "OfficialIndependence.png", "caption": "ኤርትራ በተግባር ነጻነቷን ካገኘችበት ጊዜ አንስቶ በትክክል ከሁለት ዓመታት በኋላ፣ ሉዓላዊ ነጻነቷን በይፋ አወጀች እና የተባበሩት መንግስታት ድርጅት አባል ሆነች።"}
     ]
   }
 }
