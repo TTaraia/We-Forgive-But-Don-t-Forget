@@ -4,10 +4,72 @@
   "_help": "Each scene title below must match scenes_en.txt exactly. Every scene holds a LIST [ ... ] of pictures. 'file' is the picture in the top folder (or photos/). Put one credit line in default_credit, or add a 'credit' to a single picture. Calm pictures of places only: no victims, no graphic scenes.",
   "scenes": {
     
+"ዓመተ ጥፍኣት"፡ [
+      {
+        "file": "agordat.png", 
+        "caption": "ኣጎርዳት: ብ9 መጋቢት 1975 ዝተጸብጸበ ቅትለት (ኤርትራዊ ምንጭታት)"
+      },
+      {
+        "file": "hirgigo.png", 
+        "caption": "ሕርጊጎ: ብዕለት 17 ሚያዝያ 1975 ዝተጸብጸበ ቅትለት (ኤርትራዊ ምንጭታት)"
+      }
+    ]፣
+"ምቑጻር ወጻኢታት"፡ [
+      {
+        "file": "imberemi.png", 
+        "caption": "ኢምበረሚ፡ ገማግም ቀይሕ ባሕሪ፡ ብሓደ ኣሃዱ ሓይሊ ባሕሪ ዝተቐትሉ ሲቪላት፡ መጋቢት 1977"
+      }
+    ]፣
+"ኲናት ኣየር"፡ [
+      {
+        "file": "nakfa.png", 
+        "caption": "ናክፋ: ብናይ ዓሰርተ ዓመት ደብዳብ ነፈርቲ ዓንዩ"
+      }
+    ]፣
+"ሸዕብ"፡ [
+      {
+        "file": "she'eb_.png", 
+        "caption": "ሸዕብ፡ ኣብ ዞባ ሰሜናዊ ቀይሕ ባሕሪ እትርከብ፡ 12 ግንቦት 1988"
+      }
+    ]፣
+"ኣፍዓበት"፡ [
+      {
+        "file": "afabet.png", 
+        "caption": "ኣፋቤት: ደብዳብ ነፈርቲ 3ን 4ን ሚያዝያ 1990"
+      }
+    ]፣
+"ማሳዋ ኣብ ትሕቲ ቦምባታት"፡ [
+      {
+        "file": "massawa.png", 
+        "caption": "ማሳዋ: ካብ ኣየር ቦምባ ተደብዲባ፡ ካብ ለካቲት ክሳብ ሰነ 1990"
+      },
+      {
+        "file":
+      }
+    ]፣
+"ማሳዋ፡ እቲ ጉድኣት"፡ [
+      {
+        "file": "imperialpalacemassawa.jpg", 
+        "caption": "ማሳዋ ድሕሪ ደብዳብ ነፈርቲ 1990",
+        "credit": "ስእሊ፡ Wikimedia Commons"። 
+      }
+    ]፣
+"ኣስመራ ኣብ ከበባ": [
+      {
+        "file": "asmaraundersiege.png", 
+        "caption": "ማሳዋ ምስ ወደቐት ሰራዊት መግዛእቲ ኢትዮጵያ ክሳብ 24 ግንቦት 1991 ኣብ ኣስመራን ከባቢኣን ተሓጺሩ"
+      }
+    ]፣
+"24 ግንቦት 1991"፡ [
+      {
+        "file": "asmara.png", 
+        "caption": "ኣስመራ፡ 24 ግንቦት 1991"
+      }
+    ]፣    
 "መቓብር ታንኪ ኣስመራ(መካነ መቓብር ታንኪ ኣስመራ)": [
       {
         "file": "ታንኪ-መቓብር-ኣብ-ኣስማራ-ኤርትርያ.png", 
-        "caption": "1961 - 1991"፣
+        "caption": "1961 - 1991",
         "credit": "ስእሊ፡ ዴቭፕሪሞቭ / 123RF"      
       }
     ]፣
