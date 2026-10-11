@@ -8,6 +8,7 @@ Check the model/data license before using generated speech commercially.
 from pathlib import Path
 import subprocess
 import tempfile
+import sys
 
 MODEL_NAME = "facebook/mms-tts-tir"
 _PIPELINE = None
@@ -16,7 +17,7 @@ _PIPELINE = None
 def _romanize(text: str) -> str:
     try:
         result = subprocess.run(
-            ["uroman"], input=text, text=True, capture_output=True, check=True
+            [sys.executable, "-m", "uroman"], input=text, text=True, capture_output=True, check=True
         )
     except FileNotFoundError as exc:
         raise RuntimeError(
