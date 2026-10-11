@@ -1,15 +1,15 @@
 {
   "slide": "alternate",
-  "default_credit": "Photo: Beyond All/PlanZ",
+  "default_credit": "ፎቶ: Beyond All/PlanZ",
   "_help": "Each scene title below must match scenes_en.txt exactly. Every scene holds a LIST [ ... ] of pictures. 'file' is the picture in the top folder (or photos/). Put one credit line in default_credit, or add a 'credit' to a single picture. Calm pictures of places only: no victims, no graphic scenes.",
   "scenes": {
-    "Barka Burns": [
-      {"file": "tessenei.png", "caption": "Tessenei: 21 prisoners executed here, 12 February 1967"}
+    "ባርካ ቃጠሎዎች": [
+      {"file": "tessenei.png", "caption": "ተሰነይ፡ 21 እስረኞች እዚህ የተገደሉበት ቦታ፣ 12 የካቲት 1967"}
     ],
-    "More Villages Destroyed": [
-      {"file": "eilet.png", "caption": "Eilet: village burned, July 1967"},
-      {"file": "gumhot.png", "caption": "Gumhot: village burned, July 1967"},
-      {"file": "keren.png", "caption": "Keren and the Senhit villages, November 1967"}
+    "ተጨማሪ መንደሮች ወድመዋል": [
+      {"file": "eilet.png", "caption": "አይሌት፡ መንደሩ የተቃጠለበት፣ ሐምሌ 1967"},
+      {"file": "gumhot.png", "caption": "ጉምሆት፡ መንደሩ ተቃጠለ፣ ሐምሌ 1967"},
+      {"file": "keren.png", "caption": "ከረን እና የሰንሂት መንደሮች፣ ህዳር 1967"}
     ],
     "A Mosque Near Keren": [
       {"file": "besikdira.png", "caption": "Besikdira, near Keren: killings on 30 November 1970"}
