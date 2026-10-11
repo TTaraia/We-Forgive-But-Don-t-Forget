@@ -13,6 +13,10 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
+      - name: Install Uroman
+        run: |
+          git clone https://github.com/isi-nlp/uroman.git /tmp/uroman
+          echo "/tmp/uroman/bin" >> $GITHUB_PATH    
       - name: Install Python dependencies
         run: python -m pip install --upgrade pip && python -m pip install -r requirements.txt
       - name: Tigrinya (skipped if scenes_ti.txt is missing)
