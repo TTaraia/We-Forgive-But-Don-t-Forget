@@ -23,6 +23,12 @@ jobs:
             python -m pip install --upgrade pip
             pip install -r requirements.txt
             pip show edge-tts
+      - name: Test text-to-speech
+        run: |
+          edge-tts \
+            --voice en-US-AriaNeural \
+            --text "We Forgive But Don't Forget!" \
+            --write-media tts_test.mp3
       
         # run: python -m pip install --upgrade pip && python -m pip install -r requirements.txt
       - name: Amharic (skipped if scenes_am.txt is missing)
