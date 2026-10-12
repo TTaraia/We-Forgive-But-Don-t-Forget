@@ -2,7 +2,7 @@
 Builds history_<lang>.mp4 (intro music, narrated scenes with a map for each, outro music) and history_<lang>.<sub>.srt files.
 Tigrinya has no free voice: put your own recordings in audio_ti/01.mp3 ... (scene numbers); scenes without a recording
 become silent captioned scenes over quiet music."""
-import asyncio, glob, json, math, os, re, subprocess, sys, textwrap
+import asyncio, glob, json, math, os, re, subprocess, sys, textwrap, edge_tts
 from PIL import Image, ImageDraw, ImageFilter
 import lang, mapkit, histmap, music, scenes, commons_tools, random
 
@@ -25,7 +25,7 @@ def split_sentences(text): return [p for p in re.split(r"(?<=[።፧!?.])\s+", t
 def speak(text, voice, out):
     if os.environ.get("FAKE_TTS"):
         run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", str(max(1, len(text) / 14)), out]); return
-    import edge_tts
+    
     for attempt in range(4):
         try: asyncio.run(edge_tts.Communicate(text, voice).save(out)); return
         except Exception as e: print("tts retry:", e); asyncio.run(asyncio.sleep(2 * (attempt + 1)))
