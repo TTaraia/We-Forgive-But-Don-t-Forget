@@ -5,7 +5,7 @@ become silent captioned scenes over quiet music."""
 import asyncio, glob, json, math, os, re, subprocess, sys, textwrap
 from PIL import Image, ImageDraw, ImageFilter
 import lang, mapkit, histmap, music, scenes, commons_tools, random
-from tts_tigrinya import synthesize_tigrinya
+# from tts_tigrinya import synthesize_tigrinya
 
 V = sys.argv[1] if len(sys.argv) > 1 else "en"
 W, H = 1280, 720
