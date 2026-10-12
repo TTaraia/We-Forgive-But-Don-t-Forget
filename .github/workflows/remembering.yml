@@ -8,15 +8,15 @@ jobs:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
         with: { python-version: "3.12" }
-      - run: pip install edge-tts pillow shapely numpy
+      # - run: pip install edge-tts pillow shapely numpy
       - name: Install ffmpeg
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
-      - name: Install Uroman
-        run: |
-          python -m pip install uroman
-          python -m uroman --help   
+      # - name: Install Uroman
+      #   run: |
+      #     python -m pip install uroman
+      #     python -m uroman --help   
       - name: Install Python dependencies
         run: python -m pip install --upgrade pip && python -m pip install -r requirements.txt
       - name: Amharic (skipped if scenes_am.txt is missing)
