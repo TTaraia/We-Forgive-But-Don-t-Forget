@@ -299,8 +299,8 @@ if __name__ == "__main__":
             rec = own_recording(idx + 1) if role == "scene" else None
             if rec: run(["ffmpeg", "-y", "-loglevel", "error", "-i", rec, "-ar", "44100", "-ac", "2", out.replace(".mp3", ".m4a")]); out = out.replace(".mp3", ".m4a")
             
-        elif male is None: silent_scene(out.replace(".mp3", ".m4a"), estimate_seconds(text)); out = out.replace(".mp3", ".m4a")
-        else: timings[k] = tts(text, out, female if (role == "scene" and idx % 2 == 0) else male)
+            elif male is None: silent_scene(out.replace(".mp3", ".m4a"), estimate_seconds(text)); out = out.replace(".mp3", ".m4a")
+            else: timings[k] = tts(text, out, female if (role == "scene" and idx % 2 == 0) else male)
         audio.append(out)
     adur = [dur(a) for a in audio]
     durs = [max(ad + (0.8 if it[0] == "voice" else 0), MIN_SCENE if it[1] == "scene" else 0) for ad, it in zip(adur, items)]
