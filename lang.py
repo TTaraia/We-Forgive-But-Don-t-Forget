@@ -121,7 +121,7 @@ HIST = {
                    "federation": "ፈደረሽን ሕቡራት ሃገራት ምስ ኢትዮጵያ (1952-1962)", "province": "ክፍለ ሃገር ኢትዮጵያ (1962-1991)",
                    "war": "ኲናት ናጽነት (1961-1991)", "independent": "ናጻ ኤርትራ (እውቅና 1993)"}}}
 
----------- YouTube upload texts (DRAFT Amharic/Tigrinya) ----------
+# ---------- YouTube upload texts (DRAFT Amharic/Tigrinya) ----------
 HIST["en"].update({
  "video_title": "Eritrea: A Short Modern History (1890-1993)",
  "desc": "A calm, date-by-date look at how modern Eritrea came to be: Italian colonization (1890), British administration, the UN federation with Ethiopia (1952), its end in 1962, the war of independence, and the 1993 referendum. Based on standard references.",
