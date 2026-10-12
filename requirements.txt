@@ -2,3 +2,4 @@ torch
 transformers
 soundfile
 numpy
+edge-tts==7.2.8
