@@ -305,7 +305,7 @@ if __name__ == "__main__":
     total = len(scs); parts, starts, cum = [], [], 0.0; pcfg = photo_config(V); credits = []
 try:
         import check_images; check_images.check(quiet=False)
-    except Exception as ex: print("image check skipped:", ex)
+except Exception as ex: print("image check skipped:", ex)
     for k, ((kind, role, idx), a, D) in enumerate(zip(items, audio, durs)):
         spec = en[idx]["spec"] if role == "scene" else {"view": "horn", "style": "independent"}
         histmap.render(countries, spec, V).save(f"{V}_m{k}.png")
