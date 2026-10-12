@@ -1,232 +1,232 @@
 {
   "slide": "alternate",
   "default_credit": "Photo: Beyond All/PlanZ",
-  "_help": "Each scene title below must match scenes_en.txt exactly. Every scene holds a LIST [ ... ] of pictures. 'file' is the picture in the top folder (or photos/). Put one credit line in default_credit, or add a 'credit' to a single picture. Calm pictures of places only: no victims, no graphic scenes.",
+  "_help": "Each scene title below must match scenes_en.txt exactly. Every scene holds a LIST [ ... ] of pictures. 'file' is the picture in the top folder (or photoss/). Put one credit line in default_credit, or add a 'credit' to a single picture. Calm pictures of places only: no victims, no graphic scenes.",
   "scenes": {
     "ባርካ ትቃጸል": [
       {
-        "file": "tesenei.png", 
+        "file": "photos/tesenei.png", 
         "caption": "ተሰነይ: 21 እሱራት ኣብዚ ተቐቲሎም: 12 ለካቲት 1967"
       }
     ],
     "ተወሳኺ ዓድታት ዓንየን": [
-      {"file": "eilet.png", "caption": "ኣይሌት: ዓዲ ተቓጺላ: ሓምለ 1967"},
-      {"file": "gumhot.png", "caption": "ጉምሆት: ዓዲ ተቓጺላ: ሓምለ 1967"},
-      {"file": "keren.png", "caption": "ከረንን ዓድታት ሰንሂትን: ሕዳር 1967"}
+      {"file": "photos/eilet.png", "caption": "ኣይሌት: ዓዲ ተቓጺላ: ሓምለ 1967"},
+      {"file": "photos/gumhot.png", "caption": "ጉምሆት: ዓዲ ተቓጺላ: ሓምለ 1967"},
+      {"file": "photos/keren.png", "caption": "ከረንን ዓድታት ሰንሂትን: ሕዳር 1967"}
     ],
     "ኣብ ከባቢ ከረን ዝርከብ መስጊድ": [
-      {"file": "besikdira.png", "caption": "በሲክዲራ: ኣብ ጥቓ ከረን: ቅትለት ብዕለት 30 ሕዳር 1970"}
+      {"file": "photos/besikdira.png", "caption": "በሲክዲራ: ኣብ ጥቓ ከረን: ቅትለት ብዕለት 30 ሕዳር 1970"}
     ],
     "ኦና": [
-      {"file": "ona.png", "caption": "ኦና: ኣብ ወሰን ከረን: መጥቃዕቲ 1 ታሕሳስ 1970"}
+      {"file": "photos/ona.png", "caption": "ኦና: ኣብ ወሰን ከረን: መጥቃዕቲ 1 ታሕሳስ 1970"}
     ],
     "ኣዋጅ ህጹጽ እዋን": [
-      {"file": "elabored.png", "caption": "ዝርዝር: ኣስታት 60 ሲቪላት ኣብ መስጊድ ተቐቲሎም፣ 27 ጥሪ 1971"}
+      {"file": "photos/elabored.png", "caption": "ዝርዝር: ኣስታት 60 ሲቪላት ኣብ መስጊድ ተቐቲሎም፣ 27 ጥሪ 1971"}
     ],
     "ኦም ሓጀር": [
-      {"file": "omhajer.png", "caption": "ኦም ሓጀር: ኣብ ጥቓ ዶብ ሱዳን: ሓምለ 1974"}
+      {"file": "photos/omhajer.png", "caption": "ኦም ሓጀር: ኣብ ጥቓ ዶብ ሱዳን: ሓምለ 1974"}
     ],
     "ኣስመራ": [
-      {"file": "wokiduba.png", "caption": "ካብ ኣስመራ ወጻኢ ኣብ 1975 ሰላማውያን ሰባት ዝተቐትሉላ ዓዲ"},
-      {"file": "asmara.png", "caption": "ኣስመራ: ለካቲት 1975"},
-      {"file": "maryam_gimbi.png", "caption": "ኣብ እዋን ኲናት ዝተፈጸመ ግህሰትን ቅትለትን እሱራት ዝተሰነደ ቦታ።"}
+      {"file": "photos/wokiduba.png", "caption": "ካብ ኣስመራ ወጻኢ ኣብ 1975 ሰላማውያን ሰባት ዝተቐትሉላ ዓዲ"},
+      {"file": "photos/asmara.png", "caption": "ኣስመራ: ለካቲት 1975"},
+      {"file": "photos/maryam_gimbi.png", "caption": "ኣብ እዋን ኲናት ዝተፈጸመ ግህሰትን ቅትለትን እሱራት ዝተሰነደ ቦታ።"}
     ],
     "ዓመተ ጥፍኣት": [
       {
-        "file": "agordat.png", 
+        "file": "photos/agordat.png", 
         "caption": "ኣጎርዳት: ብ9 መጋቢት 1975 ዝተጸብጸበ ቅትለት (ኤርትራዊ ምንጭታት)"
       },
       {
-        "file": "hirgigo.png", 
+        "file": "photos/hirgigo.png", 
         "caption": "ሕርጊጎ: ብዕለት 17 ሚያዝያ 1975 ዝተጸብጸበ ቅትለት (ኤርትራዊ ምንጭታት)"
       }
     ],
     "ወጻኢታት ምቑጻር ": [
       {
-        "file": "imberemi.png", 
+        "file": "photos/imberemi.png", 
         "caption": "ኢምበረሚ: ገማግም ቀይሕ ባሕሪ: ብሓደ ኣሃዱ ሓይሊ ባሕሪ ዝተቐትሉ ሲቪላት: መጋቢት 1977"
       }
     ],
     "እቲ ናይ ኣየር ኲናት ": [
           {
-            "file": "nakfa.png", 
+            "file": "photos/nakfa.png", 
             "caption": "ናክፋ: ብናይ ዓሰርተ ዓመት ደብዳብ ነፈርቲ ዓንዩ"
           }
         ],
     "ሸዕብ": [
           {
-            "file": "she'eb_.png", 
+            "file": "photos/she'eb_.png", 
             "caption": "ሸዕብ: ኣብ ዞባ ሰሜናዊ ቀይሕ ባሕሪ እትርከብ: 12 ግንቦት 1988"
           }
         ],
     "ኣፍዓበት": [
           {
-            "file": "afabet.png", 
+            "file": "photos/afabet.png", 
             "caption": "ኣፋቤት: ደብዳብ ነፈርቲ 3ን 4ን ሚያዝያ 1990"
           }
         ],
     "ምጽዋዕ ኣብ ትሕቲ ቦምባታት": [
           {
-            "file": "massawa.png", 
+            "file": "photos/massawa.png", 
             "caption": "ማሳዋ: ካብ ኣየር ቦምባ ተደብዲባ: ካብ ለካቲት ክሳብ ሰነ 1990"
           }
         ],
     "ምጽዋዕ: እቲ ጉድኣት": [
           {
-            "file": "imperialpalacemassawa.jpg", 
+            "file": "photos/imperialpalacemassawa.jpg", 
             "caption": "ማሳዋ ድሕሪ ደብዳብ ነፈርቲ 1990",
             "credit": "ስእሊ: Wikimedia Commons"
           }
         ],
     "ኣስመራ ኣብ ከበባ": [
           {
-            "file": "asmaraundersiege.png", 
+            "file": "photos/asmaraundersiege.png", 
             "caption": "ማሳዋ ምስ ወደቐት ሰራዊት መግዛእቲ ኢትዮጵያ ክሳብ 24 ግንቦት 1991 ኣብ ኣስመራን ከባቢኣን ተሓጺሩ"
           }
         ],
     "24 ግንቦት 1991": [
           {
-            "file": "asmara.png", 
+            "file": "photos/asmara.png", 
             "caption": "ኣስመራ: 24 ግንቦት 1991"
           }
         ],   
     "መቓብር ታንኪ ኣስመራ(መካነ መቓብር ታንኪ ኣስመራ)": [
           {
-            "file": "ታንኪ-መቓብር-ኣብ-ኣስማራ-ኤርትርያ.png", 
+            "file": "photos/tank-graveyard-in-asmara-eritrea.png", 
             "caption": "1961 - 1991",
             "credit": "ስእሊ: ዴቭፕሪሞቭ / 123RF"      
           }
         ],
     "ምዝካር ኤርትራውያን ግዳያት መግዛእቲ ኢትዮጵያውያን ወረርቲ": [
           {
-            "file": "ምዝካር_ግዳያት.png", 
+            "file": "photos/remembering_victims.png", 
             "caption": "1961 - 1991"
           }
         ],
     "እቶም ኣዝዮም ትርጉም ዘለዎም ዕለታት": [
           {
-            "file": "MostImportantDates.png", 
+            "file": "photos/MostImportantDates.png", 
             "caption": "ኤርትራ: ኣብ እዋን መግዛእቲ ኢትዮጵያን ብቕጽበት ስዒቡን ዝረኣዩ ዕለታት"
           }
         ],
     "ዘመነ ፈደረሽን": [
           {
-            "file": "federationEra.png", 
+            "file": "photos/federationEra.png", 
             "caption": "ፈደረሽን: ዘመነ ፈደረሽን: 1952 - 1962"
           }
         ],
     "ፈደረሽን ይጅምር": [
           {
-            "file": "federation_begins.png",
+            "file": "photos/federation_begins.png",
             "caption": "ንውሳነ ሕቡራት ሃገራት 390(ሀ) ስዒቡ: ኤርትራ ብወግዒ ምስ ሃጸያዊ ግዝኣት ኢትዮጵያ ከም ናይ ገዛእ ርእሳ ባይቶ: ቅዋም: ባንዴራ ዘለዋ ርእሰ-ምምሕዳር ዘለዋ ኣሃዱ ኮይና ብወግዒ ትሕወስ።"
           }
         ],
     "ምዕፋን ቋንቋ": [
           {
-            "file": "language_suppression.png", 
+            "file": "photos/language_suppression.png", 
             "caption": "ምዕፋን ቋንቋ: ሃጸይ ሃይለስላሴ: ምምሃርን ወግዓዊ ኣጠቓቕማን ቋንቋታት ተወለድቲ ኤርትራ (ትግርኛን ዓረብን) ብምኽልካል: ኣምሓርኛ ከም እንኮ ወግዓዊ ቋንቋ ኣገዲዶም።"
           }
         ],
     "ባንዴራ ወሪዳ": [
           {
-            "file": "flag_lowered.png", 
+            "file": "photos/flag_lowered.png", 
             "caption": "ባንዴራ ኤርትራ: መንግስቲ ኢትዮጵያ ንባንዴራ ኤርትራ ብወግዒ ኣውሪዱ ብናይ ኢትዮጵያ ሃጸያዊ ባንዴራ ይትክኣ።"
           }
         ],
     "ምንቅስቓስ ሓርነት ኤርትራ(ELM) ተመስሪቱ ኣሎ": [
           {
-            "file": "elm_began.png",
+            "file": "photos/elm_began.png",
             "caption": "ሕቡእ ምንቅስቓስ ሓርነት ኤርትራ (ኤል.ኤም.) ኣብ ሱዳን ተመስሪቱ ኣንጻር ወራር ኢትዮጵያ ምስጢራዊ ፖለቲካዊ ተቓውሞ ንምውዳብ እዩ።"
           }
         ],
     "ግንባር ሓርነት ኤርትራ(ተጋድሎ: ELF) ተመስሪቱ": [
           {
-            "file": "elf_founded",
+            "file": "photos/elf_founded",
             "caption": "ግንባር ​​ሓርነት ኤርትራ ኣብ ካይሮ ተመስሪቱ: ምንቅስቓስ ናጽነት ናብ ዕጥቃዊ ቓልሲ ስትራተጂ የሰጋግር።"
           }
         ],
     "ዕጥቃዊ ቃልሲ ይጅምር, እተን ቀዳሞት ተኹሲ": [
           {
-            "ፋይል": "hamididrisawate.png", 
+            "ፋይል": "photos/hamididrisawate.png", 
             "caption": "ዕጥቃዊ ቃልሲ ይጅምር: ሓምድ እድሪስ ዓዋተ ኣብ ደብረ ኣዳል ኣብ ልዕሊ ሓይልታት ኢትዮጵያ ቀዳሞት ተኹሲ ብምትኳስ ን30 ዓመታት ዝጸንሐ ኲናት ናጽነት ኤርትራ ብወግዒ ጀሚሩ።",
             "credit": "ስእሊ: shabait.com"
           }
         ],
     "ምሕዋስን ቀዳማይ ምዕራፍ ኲናትን": [
           {
-            "file": "annexation_war.png", 
+            "file": "photos/annexation_war.png", 
             "caption": "ምውህሃድን ኲናትን: ምሕዋስን ቀዳማይ ምዕራፍ ኲናትን"
           }
         ],
     "ፈደረሽን ይፈርስ": [
           {
-            "file": "federation_dissolved",
+            "file": "photos/federation_dissolved",
             "caption": "ብኸቢድ ወተሃደራዊ ጸቕጢ ሃይለስላሴ: ባይቶ ኤርትራ ባዕሉ ክፈርስ ተገዲዱ: ኤርትራ ድማ መበል 14 ኣውራጃ ኢትዮጵያ ኮይና ብወግዒ ትሕወስ።"
           }
         ],
     "ምምስራት ህዝባዊ ግንባር ሓርነት ኤርትራ": [
           {
-            "file": "eplf_founded.png",
+            "file": "photos/eplf_founded.png",
             "caption": "ኣብ ውሽጢ ተጋድሎ ሓርነት ኤርትራ ዝፍጠር ውሽጣዊ ስነ-ሓሳባዊ ምፍንጫል ናብ ምፍጣር ህዝባዊ ግንባር ሓርነት ኤርትራ (ህግደፍ) ይመርሕ፣ ኣብ መወዳእታ ድማ እቲ ዓብላሊ ጉጅለ ዓመጽቲ ይኸውን።"
           }
         ],
     "ስርዓት ደርጊን ምብራኽን": [
           {
-            "file": "derg_regime.png", 
+            "file": "photos/derg_regime.png", 
             "caption": "ምዕባይ ስርዓት ደርጊ"
           }
         ],
     "ውድቀት ሃይለስላሴ": [
           {
-            "file": "fall_HaileSalasie.png", 
+            "file": "photos/fall_HaileSalasie.png", 
             "caption": "ውድቀት ሃይለስላሴ: ሃጸይ ኢትዮጵያ ብወተሃደራዊ ዕልዋ መንግስቲ ብደርጊ ዝፍለጥ ኣረሜናዊ ዕልዋ መንግስቲ ይግልበጥ፣ ኣብ መወዳእታ ድማ ብመንግስቱ ሃይለ-ማርያም ዝምራሕ፣ ንኲናት ኤርትራ ብኸቢድ ዘጋድዶ።"
           }
         ],
     "ቀዳማይ ስትራተጂካዊ ምስሓብ": [
           {
-            "file": "strategic_withdrawal.png", 
+            "file": "photos/strategic_withdrawal.png", 
             "caption": "ስትራተጂካዊ ምስሓብ: ዳርጋ ንመላእ ኤርትራ ድሕሪ ምሓዙ: ሰራዊት ኢትዮጵያ ብምድጋፍ ብዝገበሮ ሰፊሕ ወተሃደራዊ ምትእትታው ሶቭየት ናብ ሰሜናዊ ኣኽራናት ናክፋ ታክቲካዊ ንድሕሪት ክምለስ ይግደድ።"
           }
         ],
     "መጥቃዕቲ ቀይሕ ኮኾብ": [
           {
-            "file": "redsea_operation.png",
+            "file": "photos/redsea_operation.png",
             "caption": "ደርጊ ኣብ ናቕፋ ንህግደፍ ንምጭፍላቕ ዝዓበየ ወተሃደራዊ ወፍሪ ይጅምር: ኣዕናዊ ጉድኣት እናበጽሐ ግን ምሉእ ብምሉእ ይፈሽል።"
           }
             ],
     "መንገዲ ሓርነት": [
           {
-            "file": "road_to_liberation.png", 
+            "file": "photos/road_to_liberation.png", 
             "caption": "መንገዲ ሓርነት 1988–1993"
           }
         ],
     "ውግእ ኣፍዓበት": [
           {
-            "file": "afabet_war.png",
+            "file": "photos/afabet_war.png",
             "caption": "ህዝባዊ ግንባር ሓርነት ኤርትራ ኣብ ኣፍዓበት ንዝነበረ ትእዛዛት ሰራዊት ኢትዮጵያ የጥፍእ፣ እዚ ድማ እንግሊዛዊ ጸሓፊ ታሪኽ ባሲል ዳቪድሰን ድሕሪ ዲየን ቢየን ፉ ኣብ ኣፍሪቃ እቲ ዝዓበየ ትርጉም ዘለዎ ዓወት ኢሉ ዝጸውዖ ወሳኒ ነጥበ መቐይሮ እዩ።"
           }
             ],
     "ስርሒት ፈንቅል": [
           {
-            "file": "OperationFenkil.png", 
+            "file": "photos/OperationFenkil.png", 
             "caption": "ህግደፍ ንስትራተጂካዊት ወደባዊት ከተማ ማሳዋ ሓራ ንምውጻእ ሰፊሕ ሃንደበታዊ መጥቃዕቲ ማይን ምድርን ብምክያድ ኣብ ኣስመራ ንዝርከቡ ወተሃደራት ኢትዮጵያ ቀዳማይ መስመር ቀረብ ቆሪጹ።"
           }
         ],
     "ውድቀት ኣስመራ": [
           {
-            "file": "May24.png", 
+            "file": "photos/May24.png", 
             "caption": "ሓይልታት ህዝባዊ ግንባር ሓይልታት ህዝባዊ ግንባር ናብ ርእሰ ከተማ ኣስመራ ብምእታው ነቲ ዝተረፈ ዕርዲ ኢትዮጵያ ሙሉእ ብሙሉእ ብምስዓር ናይ 39 ዓመት መግዛእቲ ኢትዮጵያ ኣብቂዑ።"
           }
             ],
     "ረፈረንደም ናጽነት": [
           {
-            "file": "Referendum.png", 
+            "file": "photos/Referendum.png", 
             "caption": "99.8% ኤርትራውያን ንልኡላውነት ዝድግፉሉ ብሕቡራት ሃገራት ዝከታተል ረፈረንደም ይካየድ።"
           }
         ],
     "ወግዓዊ ናጽነት": [
           {
-            "file": "OfficialIndependence.png", 
+            "file": "photos/OfficialIndependence.png", 
             "caption": "ኤርትራ ልኡላዊ ናጽነታ ብወግዒ ኣዊጃ ናብ ሕቡራት ሃገራት ተጸንቢራ: ልክዕ ድሕሪ ክልተ ዓመት ድሕሪ ጭቡጥ ሓርነት።"
           }
         ]
