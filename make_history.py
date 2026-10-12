@@ -176,7 +176,7 @@ if not os.path.exists(filename):
         print(f"Warning: {filename} not found; no photos loaded.")
         return {}
 
-    with open(filename, encoding="utf-8") as f:
+with open(filename, encoding="utf-8") as f:
         return json.load(f)
 
 def resolve_photos(cfg, title, idx):
