@@ -6,20 +6,20 @@ from PIL import Image, ImageDraw, ImageFont
 LANGS = {"en": "English", "am": "Amharic", "ti": "Tigrinya"}
 VOICES = {"en": (os.environ.get("VOICE_MALE", "en-US-AndrewNeural"), os.environ.get("VOICE_FEMALE", "en-US-JennyNeural")),
           "am": ("am-ET-AmehaNeural", "am-ET-MekdesNeural"), "ti": ("am-ET-AmehaNeural", "am-ET-MekdesNeural")}   # Tigrinya has no free voice
-# STR = {
-#  "en": {"title": ["Eritrea In The Eyes", "Of The World Today"], "outro": ["Allegations are claims,", "not independently verified"],
-#         "outro_sub": "Sources are in the description", "source": "Source:", "map": "Map:", "story": "Story {n} of {t}",
-#         "legend": "Eritrea: flag colours · Ethiopia: light red", "borders": "Natural Earth borders, for orientation only"},
-#  "am": {"title": ["ኤርትራ በዓለም ዓይን", "ዛሬ"], "outro": ["ክሶች የይገባኛል ጥያቄዎች ናቸው፤", "በገለልተኛ አካል አልተረጋገጡም"],
-#         "outro_sub": "ምንጮች በመግለጫው ውስጥ ይገኛሉ", "source": "ምንጭ፦", "map": "ካርታ፦", "story": "{n} / {t}",
-#         "legend": "ኤርትራ፦ የባንዲራ ቀለማት · ኢትዮጵያ፦ ቀላል ቀይ", "borders": "ድንበሮች ለማመልከቻ ብቻ (Natural Earth)",
-#         "intro_spoken": "ኤርትራ በዓለም ዓይን ዛሬ። የዛሬው የዜና ማጠቃለያ።",
-#         "outro_spoken": "ክሶች የይገባኛል ጥያቄዎች ብቻ ናቸው፤ በገለልተኛ አካል አልተረጋገጡም። ምንጮቹ በቪዲዮው መግለጫ ውስጥ ተዘርዝረዋል።"},
-#  "ti": {"title": ["ኤርትራ ኣብ ዓይኒ ዓለም", "ሎሚ"], "outro": ["ክሲታት ጥርዓናት እዮም፣", "ብነጻ ኣካል ኣይተረጋገጹን"],
-#         "outro_sub": "ምንጭታት ኣብ መግለጺ ኣለዉ", "source": "ምንጪ፦", "map": "ካርታ፦", "story": "{n} / {t}",
-#         "legend": "ኤርትራ፦ ሕብሪ ባንዴራ · ኢትዮጵያ፦ ፍኩስ ቀይሕ", "borders": "ዶባት ንምርኣይ ጥራይ (Natural Earth)",
-#         "intro_spoken": "ኤርትራ ኣብ ዓይኒ ዓለም ሎሚ። ሓጺር ጸብጻብ ናይ ሎሚ ዜና።",
-#         "outro_spoken": "ክሲታት ጥርዓናት ጥራይ እዮም፣ ብነጻ ኣካል ኣይተረጋገጹን። ምንጭታት ኣብ መግለጺ እቲ ቪዲዮ ተዘርዚሮም ኣለዉ።"}}
+STR = {
+ "en": {"title": ["Eritrea In The Eyes", "Of The World Today"], "outro": ["Allegations are claims,", "not independently verified"],
+        "outro_sub": "Sources are in the description", "source": "Source:", "map": "Map:", "story": "Story {n} of {t}",
+        "legend": "Eritrea: flag colours · Ethiopia: light red", "borders": "Natural Earth borders, for orientation only"},
+ "am": {"title": ["ኤርትራ በዓለም ዓይን", "ዛሬ"], "outro": ["ክሶች የይገባኛል ጥያቄዎች ናቸው፤", "በገለልተኛ አካል አልተረጋገጡም"],
+        "outro_sub": "ምንጮች በመግለጫው ውስጥ ይገኛሉ", "source": "ምንጭ፦", "map": "ካርታ፦", "story": "{n} / {t}",
+        "legend": "ኤርትራ፦ የባንዲራ ቀለማት · ኢትዮጵያ፦ ቀላል ቀይ", "borders": "ድንበሮች ለማመልከቻ ብቻ (Natural Earth)",
+        "intro_spoken": "ኤርትራ በዓለም ዓይን ዛሬ። የዛሬው የዜና ማጠቃለያ።",
+        "outro_spoken": "ክሶች የይገባኛል ጥያቄዎች ብቻ ናቸው፤ በገለልተኛ አካል አልተረጋገጡም። ምንጮቹ በቪዲዮው መግለጫ ውስጥ ተዘርዝረዋል።"},
+ "ti": {"title": ["ኤርትራ ኣብ ዓይኒ ዓለም", "ሎሚ"], "outro": ["ክሲታት ጥርዓናት እዮም፣", "ብነጻ ኣካል ኣይተረጋገጹን"],
+        "outro_sub": "ምንጭታት ኣብ መግለጺ ኣለዉ", "source": "ምንጪ፦", "map": "ካርታ፦", "story": "{n} / {t}",
+        "legend": "ኤርትራ፦ ሕብሪ ባንዴራ · ኢትዮጵያ፦ ፍኩስ ቀይሕ", "borders": "ዶባት ንምርኣይ ጥራይ (Natural Earth)",
+        "intro_spoken": "ኤርትራ ኣብ ዓይኒ ዓለም ሎሚ። ሓጺር ጸብጻብ ናይ ሎሚ ዜና።",
+        "outro_spoken": "ክሲታት ጥርዓናት ጥራይ እዮም፣ ብነጻ ኣካል ኣይተረጋገጹን። ምንጭታት ኣብ መግለጺ እቲ ቪዲዮ ተዘርዚሮም ኣለዉ።"}}
 NAMES = {
  "am": {"Eritrea": "ኤርትራ", "Ethiopia": "ኢትዮጵያ", "Sudan": "ሱዳን", "South Sudan": "ደቡብ ሱዳን", "Djibouti": "ጅቡቲ",
         "Somalia": "ሶማሊያ", "Egypt": "ግብፅ", "Kenya": "ኬንያ", "Uganda": "ኡጋንዳ", "Yemen": "የመን", "Chad": "ቻድ",
@@ -121,25 +121,25 @@ HIST = {
                    "federation": "ፈደረሽን ሕቡራት ሃገራት ምስ ኢትዮጵያ (1952-1962)", "province": "ክፍለ ሃገር ኢትዮጵያ (1962-1991)",
                    "war": "ኲናት ናጽነት (1961-1991)", "independent": "ናጻ ኤርትራ (እውቅና 1993)"}}}
 
-# ---------- YouTube upload texts (DRAFT Amharic/Tigrinya) ----------
-# HIST["en"].update({
-#  "video_title": "Eritrea: A Short Modern History (1890-1993)",
-#  "desc": "A calm, date-by-date look at how modern Eritrea came to be: Italian colonization (1890), British administration, the UN federation with Ethiopia (1952), its end in 1962, the war of independence, and the 1993 referendum. Based on standard references.",
-#  "sources": "Sources: Britannica; United Nations records (for example, UN General Assembly Resolution 390 (V), 1950).",
-#  "disclosure": "Notes: narration uses a synthetic (AI) voice. Maps show modern borders for orientation only. Subtitles are available in English, Amharic and Tigrinya.",
-#  "chapters": "Chapters", "chapter_intro": "Introduction", "chapter_outro": "Sources and thanks"})
-# HIST["am"].update({
-#  "video_title": "ኤርትራ፦ አጭር ዘመናዊ ታሪክ (1890-1993)",
-#  "desc": "ዘመናዊቷ ኤርትራ እንዴት እንደተፈጠረች በቀኖችና በተቋማት የሚቃኝ ረጋ ያለ ዘገባ፦ የጣሊያን ቅኝ ግዛት (1890)፣ የብሪታንያ አስተዳደር፣ ከኢትዮጵያ ጋር የተባበሩት መንግሥታት ፌዴሬሽን (1952)፣ በ1962 መፍረሱ፣ የነጻነት ጦርነትና የ1993 ሕዝበ ውሳኔ። በመደበኛ ምንጮች ላይ የተመሠረተ።",
-#  "sources": "ምንጮች፦ ብሪታኒካ፤ የተባበሩት መንግሥታት መዛግብት (ለምሳሌ የጠቅላላ ጉባኤ ውሳኔ 390 (V)፣ 1950)።",
-#  "disclosure": "ማስታወሻ፦ ይህ ቪዲዮ ሰው ሠራሽ (AI) ድምፅ ይጠቀማል። ካርታዎች ዘመናዊ ድንበሮችን ለማመልከቻ ብቻ ያሳያሉ። የትርጉም ጽሑፎች በእንግሊዝኛ፣ በአማርኛና በትግርኛ ይገኛሉ።",
-#  "chapters": "ምዕራፎች", "chapter_intro": "መግቢያ", "chapter_outro": "ምንጮችና ምስጋና"})
-# HIST["ti"].update({
-#  "video_title": "ኤርትራ፦ ሓጺር ዘመናዊ ታሪኽ (1890-1993)",
-#  "desc": "ከመይ ኢላ ዘመናዊት ኤርትራ ከም ዝተፈጥረት ብዕለታትን ትካላትን ዝርኢ ህዱእ ጸብጻብ፦ ቅኝ ግዛት ጣልያን (1890)፣ ምምሕዳር ብሪጣንያ፣ ፈደረሽን ሕቡራት ሃገራት ምስ ኢትዮጵያ (1952)፣ ኣብ 1962 ምፍራሱ፣ ኲናት ናጽነትን ርእይቶ ህዝቢ 1993ን። ኣብ መሰረታዊ ምንጭታት ዝተመስረተ።",
-#  "sources": "ምንጭታት፦ ብሪታኒካ፤ ሰነዳት ሕቡራት ሃገራት (ንኣብነት ውሳነ ሓባራዊ ጉባኤ 390 (V)፣ 1950)።",
-#  "disclosure": "ምልክታ፦ ካርታታት ዘመናዊ ዶባት ንምርኣይ ጥራይ የርእዩ። ትሕተ-ጽሑፋት ብእንግሊዝኛ፣ ኣምሓርኛን ትግርኛን ይርከቡ።",
-#  "chapters": "ምዕራፋት", "chapter_intro": "መእተዊ", "chapter_outro": "ምንጭታትን የቐንየልናን"})
+---------- YouTube upload texts (DRAFT Amharic/Tigrinya) ----------
+HIST["en"].update({
+ "video_title": "Eritrea: A Short Modern History (1890-1993)",
+ "desc": "A calm, date-by-date look at how modern Eritrea came to be: Italian colonization (1890), British administration, the UN federation with Ethiopia (1952), its end in 1962, the war of independence, and the 1993 referendum. Based on standard references.",
+ "sources": "Sources: Britannica; United Nations records (for example, UN General Assembly Resolution 390 (V), 1950).",
+ "disclosure": "Notes: narration uses a synthetic (AI) voice. Maps show modern borders for orientation only. Subtitles are available in English, Amharic and Tigrinya.",
+ "chapters": "Chapters", "chapter_intro": "Introduction", "chapter_outro": "Sources and thanks"})
+HIST["am"].update({
+ "video_title": "ኤርትራ፦ አጭር ዘመናዊ ታሪክ (1890-1993)",
+ "desc": "ዘመናዊቷ ኤርትራ እንዴት እንደተፈጠረች በቀኖችና በተቋማት የሚቃኝ ረጋ ያለ ዘገባ፦ የጣሊያን ቅኝ ግዛት (1890)፣ የብሪታንያ አስተዳደር፣ ከኢትዮጵያ ጋር የተባበሩት መንግሥታት ፌዴሬሽን (1952)፣ በ1962 መፍረሱ፣ የነጻነት ጦርነትና የ1993 ሕዝበ ውሳኔ። በመደበኛ ምንጮች ላይ የተመሠረተ።",
+ "sources": "ምንጮች፦ ብሪታኒካ፤ የተባበሩት መንግሥታት መዛግብት (ለምሳሌ የጠቅላላ ጉባኤ ውሳኔ 390 (V)፣ 1950)።",
+ "disclosure": "ማስታወሻ፦ ይህ ቪዲዮ ሰው ሠራሽ (AI) ድምፅ ይጠቀማል። ካርታዎች ዘመናዊ ድንበሮችን ለማመልከቻ ብቻ ያሳያሉ። የትርጉም ጽሑፎች በእንግሊዝኛ፣ በአማርኛና በትግርኛ ይገኛሉ።",
+ "chapters": "ምዕራፎች", "chapter_intro": "መግቢያ", "chapter_outro": "ምንጮችና ምስጋና"})
+HIST["ti"].update({
+ "video_title": "ኤርትራ፦ ሓጺር ዘመናዊ ታሪኽ (1890-1993)",
+ "desc": "ከመይ ኢላ ዘመናዊት ኤርትራ ከም ዝተፈጥረት ብዕለታትን ትካላትን ዝርኢ ህዱእ ጸብጻብ፦ ቅኝ ግዛት ጣልያን (1890)፣ ምምሕዳር ብሪጣንያ፣ ፈደረሽን ሕቡራት ሃገራት ምስ ኢትዮጵያ (1952)፣ ኣብ 1962 ምፍራሱ፣ ኲናት ናጽነትን ርእይቶ ህዝቢ 1993ን። ኣብ መሰረታዊ ምንጭታት ዝተመስረተ።",
+ "sources": "ምንጭታት፦ ብሪታኒካ፤ ሰነዳት ሕቡራት ሃገራት (ንኣብነት ውሳነ ሓባራዊ ጉባኤ 390 (V)፣ 1950)።",
+ "disclosure": "ምልክታ፦ ካርታታት ዘመናዊ ዶባት ንምርኣይ ጥራይ የርእዩ። ትሕተ-ጽሑፋት ብእንግሊዝኛ፣ ኣምሓርኛን ትግርኛን ይርከቡ።",
+ "chapters": "ምዕራፋት", "chapter_intro": "መእተዊ", "chapter_outro": "ምንጭታትን የቐንየልናን"})
 
 # ---------- PROJECT: We Forgive But Don't Forget! Remembering The Eritrean War Years (English first; am/ti still need translating) ----------
 _SRC = ("Sources:\n"
@@ -158,9 +158,9 @@ HIST["en"].update({
  "sources": _SRC,
  "disclosure": "Notes: narration uses a synthetic (AI) voice. Maps show modern borders for orientation only. This video describes violence against civilians but shows no graphic images. Human Rights Watch also documented abuses by the Eritrean fronts; this video focuses on the Ethiopian military's actions.",
  "chapters": "Chapters", "chapter_intro": "Introduction", "chapter_outro": "Sources and thanks"})
-# HIST["en"]["styles"]["memorial"] = "Eritrea Under Ethiopian Colonial Rule (1962-1991)"
-# for _c in ("am", "ti"):   # placeholders: translate before building these languages
-#    HIST[_c] = dict(HIST["en"])
+HIST["en"]["styles"]["memorial"] = "Eritrea Under Ethiopian Colonial Rule (1962-1991)"
+for _c in ("am", "ti"):   # placeholders: translate before building these languages
+   HIST[_c] = dict(HIST["en"])
 HIST["am"].update({
  "ርዕስ": ["ይቅር እንላለን፤ ነገር ግን አንረሳም!", "የኤርትራን የጦርነት ዓመታት ማስታወስ"], "መግቢያ_ንዑስ_ርዕስ": "1961 - 1991",
  "መግቢያ_ንግግር": "ይቅር እንላለን፤ ነገር ግን አንረሳም! ከ1961 እስከ 1991 የነበሩትን የኤርትራ የጦርነት ዓመታት ማስታወስ። በሰብአዊ መብት ሪፖርቶች እና በታሪካዊ ጥናቶች ላይ የተመሠረተ፣ ለወጣት ተመልካቾች የተዘጋጀ ጥንቃቄ የተሞላበት ዘገባ።",
