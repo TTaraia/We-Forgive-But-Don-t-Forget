@@ -90,8 +90,8 @@ def wrap(text, sz, maxw, max_lines):
     return lines
 
 #---------- additions for the history project (DRAFT Amharic/Tigrinya: have a native speaker check) ----------
- NAMES["am"].update({"Asmara": "አስመራ", "Massawa": "ምጽዋ", "Adwa": "ዓድዋ", "Aksum": "አክሱም", "Addis Ababa": "አዲስ አበባ"})
- NAMES["ti"].update({"Asmara": "ኣስመራ", "Massawa": "ምጽዋዕ", "Adwa": "ዓድዋ", "Aksum": "ኣክሱም", "Addis Ababa": "ኣዲስ ኣበባ"})
+NAMES["am"].update({"Asmara": "አስመራ", "Massawa": "ምጽዋ", "Adwa": "ዓድዋ", "Aksum": "አክሱም", "Addis Ababa": "አዲስ አበባ"})
+NAMES["ti"].update({"Asmara": "ኣስመራ", "Massawa": "ምጽዋዕ", "Adwa": "ዓድዋ", "Aksum": "ኣክሱም", "Addis Ababa": "ኣዲስ ኣበባ"})
 # HIST = {
 #  "en": {"title": ["Eritrea:", "A Short Modern History"], "intro_sub": "Dates, decisions and institutions",
 #         "intro_spoken": "Eritrea: a short modern history. A calm look at the dates, decisions and institutions that shaped modern Eritrea.",
