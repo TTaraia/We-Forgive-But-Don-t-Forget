@@ -172,7 +172,7 @@ if language not in config_files:
 
 filename = config_files[language]
 
-    if not os.path.exists(filename):
+if not os.path.exists(filename):
         print(f"Warning: {filename} not found; no photos loaded.")
         return {}
 
