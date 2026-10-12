@@ -5,7 +5,6 @@ become silent captioned scenes over quiet music."""
 import asyncio, glob, json, math, os, re, subprocess, sys, textwrap
 from PIL import Image, ImageDraw, ImageFilter
 import lang, mapkit, histmap, music, scenes, commons_tools, random
-# from tts_tigrinya import synthesize_tigrinya
 
 V = sys.argv[1] if len(sys.argv) > 1 else "en"
 W, H = 1280, 720
@@ -166,12 +165,12 @@ def photo_config(language="en"):
         "ti": "images_ti.json",
     }
 
-    if language not in config_files:
+if language not in config_files:
         raise ValueError(
             f"Unsupported language: {language!r}. Use en, am, or ti."
         )
 
-    filename = config_files[language]
+filename = config_files[language]
 
     if not os.path.exists(filename):
         print(f"Warning: {filename} not found; no photos loaded.")
@@ -208,7 +207,7 @@ def resolve_photos(cfg, title, idx):
 def make_card(p, out_png):
     """A framed photo card (white border, soft shadow, caption and credit) as a transparent PNG."""
     im = Image.open(p["path"]).convert("RGB"); bw, bh = PHOTO_W, PHOTO_H
-    
+
     s = min(bw / im.width, bh / im.height)
     im = im.resize((int(im.width * s), int(im.height * s)), Image.Resampling.LANCZOS)
 
@@ -298,14 +297,13 @@ if __name__ == "__main__":
             text = h["intro_spoken"] if role == "intro" else (h["outro_spoken"] if role == "outro" else scs[idx]["spoken"])
             rec = own_recording(idx + 1) if role == "scene" else None
             if rec: run(["ffmpeg", "-y", "-loglevel", "error", "-i", rec, "-ar", "44100", "-ac", "2", out.replace(".mp3", ".m4a")]); out = out.replace(".mp3", ".m4a")
-            
             elif male is None: silent_scene(out.replace(".mp3", ".m4a"), estimate_seconds(text)); out = out.replace(".mp3", ".m4a")
             else: timings[k] = tts(text, out, female if (role == "scene" and idx % 2 == 0) else male)
         audio.append(out)
     adur = [dur(a) for a in audio]
     durs = [max(ad + (0.8 if it[0] == "voice" else 0), MIN_SCENE if it[1] == "scene" else 0) for ad, it in zip(adur, items)]
     total = len(scs); parts, starts, cum = [], [], 0.0; pcfg = photo_config(V); credits = []
-    try:
+try:
         import check_images; check_images.check(quiet=False)
     except Exception as ex: print("image check skipped:", ex)
     for k, ((kind, role, idx), a, D) in enumerate(zip(items, audio, durs)):
@@ -319,7 +317,7 @@ if __name__ == "__main__":
         random.shuffle(directions)
         fc = f"[0:v]crop=2432:1368:x='{xs}+({xe - xs})*t/{D:.3f}':y='{ys}+({ye - ys})*t/{D:.3f}',scale={W}:{H}:flags=bicubic[bg];[bg][1:v]overlay=0:0[v0]"
         extra, last = [], "v0"
-        
+
         for j in range(n_ph):
             png = f"{V}_p{k}_{j}.png"
             make_card(photos[j], png)
